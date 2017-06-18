@@ -1,0 +1,167 @@
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="SKYPE_TOOLBAR", content="SKYPE_TOOLBAR_PARSER_COMPATIBLE")
+		meta(content="telephone=no", name="format-detection")
+		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+		title Цветы - Главная
+		//- link(href="https://fonts.googleapis.com/css?family=Rubik:500|Ubuntu:400,700&amp;subset=cyrillic", rel="stylesheet")
+		//- link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css")
+		link(rel="stylesheet", href="css/style.css")
+		//- link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css")
+		
+		//- script(src="node_modules/pixel-glass/script.js")
+		//- link(href="node_modules/pixel-glass/styles.css" rel="stylesheet")
+		
+	body.page
+		
+		include blocks/header.pug
+
+		.order.section: .section__container
+			.order__title Оформление заказа
+			.order__container
+				.order__aside
+					table.order-list
+						tr
+							td.order-list__name Тюльпаны
+							td.order-list__price 31000 тнг
+						tr
+							td.order-list__name Упаковка
+							td.order-list__price 0 тнг
+						tr
+							td.order-list__name Доставка
+							td.order-list__price 0 тнг
+						tr
+							td.order-list__name Сбор за услуги LEKEN
+							td.order-list__price 0 тнг
+						tr
+							td.order-list__name Итого
+							td.order-list__price 31 000 тнг
+				.order__main
+					fieldset.fieldset-order
+						legend.fieldset-order__legend Пожелания
+						
+						.fieldset-order__line
+							label.field-with-floating-label
+								textarea.field-with-floating-label__field.field.field_area.field_available.fieldset-order__field
+								.field-with-floating-label__label Напишите текст открытки
+					fieldset.fieldset-order
+						legend.fieldset-order__legend Получатель
+						label.fieldset-order__label
+							input(type="checkbox")
+							| Я сам получу цветы
+
+						.fieldset-order__line
+							label.field-with-floating-label
+								input.field-with-floating-label__field.field.field_available.fieldset-order__field
+								.field-with-floating-label__label Имя получателя
+						.fieldset-order__line: .field-with-phone
+							label.field-with-floating-label
+								input.field-with-floating-label__field.field-with-floating-label__field_focus.field.field_available.field-with-phone__field(data-mask="+7 (999) 999-9999")
+								.field-with-floating-label__label Телефон
+							.lang-switcher.field-with-phone__switcher
+								.lang-switcher__current
+									img.lang-switcher__icon(src="images/flag/kzt.png", alt="" width="24" height="18")
+								.lang-switcher__content
+									.lang-switcher__item(data-mask="+6 (999) 999-9999" data-placeholder="+6"): img.lang-switcher__icon(src="images/flag/kzt.png", alt="" width="24" height="18")
+									.lang-switcher__item(data-mask="+7 (999) 999-9999" data-placeholder="+7"): img.lang-switcher__icon(src="images/flag/in.png", alt="" width="24" height="18")
+									.lang-switcher__item(data-mask="+8 (999) 999-9999" data-placeholder="+8"): img.lang-switcher__icon(src="images/flag/in-2.png", alt="" width="24" height="18")
+						.fieldset-order__line
+							.field-group-address
+								.field-group-address__field.field-group-address__main
+									label.field-group-address__checkbox.fieldset-order__label
+										input(type="checkbox")
+										| Не знаю адрес
+									label.field-with-floating-label
+										input.field-with-floating-label__field.field.field_available.fieldset-order__field
+										.field-with-floating-label__label Адрес доставки (улица и дом)
+								.field-group-address__field.field-group-address__apartment
+									label.field-with-floating-label
+										input.field-with-floating-label__field.field.field_available.fieldset-order__field
+										.field-with-floating-label__label Квартира / Офис
+						.fieldset-order__map
+
+						label.fieldset-order__label
+							input(type="checkbox")
+							| Добавить дополнительную информацию 
+
+					fieldset.fieldset-order
+						legend.fieldset-order__legend Когда доставить
+						
+						.field-group-delivery
+							.field-group-delivery__field
+								label.field-with-icon.field-with-floating-label
+									.field-with-icon__icon: img(src="images/icon/calendar.png" width="25" height="27")
+									input.field.field_available.field-with-icon__field.field-with-floating-label__field
+									.field-with-floating-label__label Дата доставки
+							.field-group-delivery__field
+								label.field-with-icon.field-with-floating-label
+									.field-with-icon__icon: img(src="images/icon/time.png" width="27" height="27")
+									input.field.field_available.field-with-icon__field.field-with-floating-label__field
+									.field-with-floating-label__label Время доставки
+					
+					fieldset.fieldset-order
+						legend.fieldset-order__legend Ваши данные
+
+						.fieldset-order__line
+							label.field-with-floating-label
+								input.field-with-floating-label__field.field.field_available
+								.field-with-floating-label__label Имя
+						.fieldset-order__line: .field-with-phone
+							label.field-with-floating-label
+								input.field-with-floating-label__field.field-with-floating-label__field_focus.field.field_available.field-with-phone__field(data-mask="+7 (999) 999-9999")
+								.field-with-floating-label__label Телефон
+							.lang-switcher.field-with-phone__switcher
+								.lang-switcher__current
+									img.lang-switcher__icon(src="images/flag/kzt.png", alt="" width="24" height="18")
+								.lang-switcher__content
+									.lang-switcher__item(data-mask="+6 (999) 999-9999" data-placeholder="+6"): img.lang-switcher__icon(src="images/flag/kzt.png", alt="" width="24" height="18")
+									.lang-switcher__item(data-mask="+7 (999) 999-9999" data-placeholder="+7"): img.lang-switcher__icon(src="images/flag/in.png", alt="" width="24" height="18")
+									.lang-switcher__item(data-mask="+8 (999) 999-9999" data-placeholder="+8"): img.lang-switcher__icon(src="images/flag/in-2.png", alt="" width="24" height="18")
+						.fieldset-order__line
+							label.field-with-floating-label
+								input.field-with-floating-label__field.field.field_available
+								.field-with-floating-label__label эл.почта
+
+					
+					fieldset.fieldset-order
+						legend.fieldset-order__legend Выберите способ оплаты
+
+						.payment
+							.payment-tabs
+								label.payment-tabs__item.payment-tabs__item_active
+									img.payment-tabs__icon(src="images/payment-type-1.png", alt="")
+									.payment-tabs__label
+										input(type="radio" name="payment")
+										| Банковская карта
+
+								label.payment-tabs__item
+									img.payment-tabs__icon(src="images/payment-type-2.png", alt="")
+									.payment-tabs__label
+										input(type="radio" name="payment")
+										| Наличные
+							.payment-content
+								.payment-content__slogan
+									| Безопасная оплата картой
+									.payment-content__subslogan данные защищены по стандарту ALECHA PAKURA
+
+								.payment-content__title Введите данные карты:
+								img.payment-content__creditcard(src="images/card.png", alt="")
+								label.payment-content__label
+									input(type="checkbox")
+									| Сохранить данные для дальнейших покупок
+								hr.payment-content__hr
+								button.payment-content__button(href="#") Оплатить 31 000 тг
+				
+
+		
+		include blocks/foo.pug
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js")
+		script(src="js/jquery.formstyler.min.js")
+		//- script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js")
+		//- script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js")
+		script(src="js/main.js")

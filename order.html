@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Цветы - Главная</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="page">
+    <header class="header section">
+      <div class="section__container">
+        <div class="header__container">
+          <div class="header__mobile-row"><img class="header__logo" src="images/logo.png" width="131" height="74" alt="Логотип">
+            <div class="nav__toggle"><span></span><span></span><span></span></div>
+          </div>
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link nav__link_active" href="#">Стань флористом</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Каталог</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Помощь</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Регистрация</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Войти</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="order section">
+      <div class="section__container">
+        <div class="order__title">Оформление заказа</div>
+        <div class="order__container">
+          <div class="order__aside">
+            <table class="order-list">
+              <tr>
+                <td class="order-list__name">Тюльпаны</td>
+                <td class="order-list__price">31000 тнг</td>
+              </tr>
+              <tr>
+                <td class="order-list__name">Упаковка</td>
+                <td class="order-list__price">0 тнг</td>
+              </tr>
+              <tr>
+                <td class="order-list__name">Доставка</td>
+                <td class="order-list__price">0 тнг</td>
+              </tr>
+              <tr>
+                <td class="order-list__name">Сбор за услуги LEKEN</td>
+                <td class="order-list__price">0 тнг</td>
+              </tr>
+              <tr>
+                <td class="order-list__name">Итого</td>
+                <td class="order-list__price">31 000 тнг</td>
+              </tr>
+            </table>
+          </div>
+          <div class="order__main">
+            <fieldset class="fieldset-order">
+              <legend class="fieldset-order__legend">Пожелания</legend>
+              <div class="fieldset-order__line">
+                <label class="field-with-floating-label">
+                  <textarea class="field-with-floating-label__field field field_area field_available fieldset-order__field"></textarea>
+                  <div class="field-with-floating-label__label">Напишите текст открытки</div>
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="fieldset-order">
+              <legend class="fieldset-order__legend">Получатель</legend>
+              <label class="fieldset-order__label">
+                <input type="checkbox">Я сам получу цветы
+              </label>
+              <div class="fieldset-order__line">
+                <label class="field-with-floating-label">
+                  <input class="field-with-floating-label__field field field_available fieldset-order__field">
+                  <div class="field-with-floating-label__label">Имя получателя</div>
+                </label>
+              </div>
+              <div class="fieldset-order__line">
+                <div class="field-with-phone">
+                  <label class="field-with-floating-label">
+                    <input class="field-with-floating-label__field field-with-floating-label__field_focus field field_available field-with-phone__field" data-mask="+7 (999) 999-9999">
+                    <div class="field-with-floating-label__label">Телефон</div>
+                  </label>
+                  <div class="lang-switcher field-with-phone__switcher">
+                    <div class="lang-switcher__current"><img class="lang-switcher__icon" src="images/flag/kzt.png" alt="" width="24" height="18"></div>
+                    <div class="lang-switcher__content">
+                      <div class="lang-switcher__item" data-mask="+6 (999) 999-9999" data-placeholder="+6"><img class="lang-switcher__icon" src="images/flag/kzt.png" alt="" width="24" height="18"></div>
+                      <div class="lang-switcher__item" data-mask="+7 (999) 999-9999" data-placeholder="+7"><img class="lang-switcher__icon" src="images/flag/in.png" alt="" width="24" height="18"></div>
+                      <div class="lang-switcher__item" data-mask="+8 (999) 999-9999" data-placeholder="+8"><img class="lang-switcher__icon" src="images/flag/in-2.png" alt="" width="24" height="18"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="fieldset-order__line">
+                <div class="field-group-address">
+                  <div class="field-group-address__field field-group-address__main">
+                    <label class="field-group-address__checkbox fieldset-order__label">
+                      <input type="checkbox">Не знаю адрес
+                    </label>
+                    <label class="field-with-floating-label">
+                      <input class="field-with-floating-label__field field field_available fieldset-order__field">
+                      <div class="field-with-floating-label__label">Адрес доставки (улица и дом)</div>
+                    </label>
+                  </div>
+                  <div class="field-group-address__field field-group-address__apartment">
+                    <label class="field-with-floating-label">
+                      <input class="field-with-floating-label__field field field_available fieldset-order__field">
+                      <div class="field-with-floating-label__label">Квартира / Офис</div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="fieldset-order__map"></div>
+              <label class="fieldset-order__label">
+                <input type="checkbox">Добавить дополнительную информацию 
+              </label>
+            </fieldset>
+            <fieldset class="fieldset-order">
+              <legend class="fieldset-order__legend">Когда доставить</legend>
+              <div class="field-group-delivery">
+                <div class="field-group-delivery__field">
+                  <label class="field-with-icon field-with-floating-label">
+                    <div class="field-with-icon__icon"><img src="images/icon/calendar.png" width="25" height="27"></div>
+                    <input class="field field_available field-with-icon__field field-with-floating-label__field">
+                    <div class="field-with-floating-label__label">Дата доставки</div>
+                  </label>
+                </div>
+                <div class="field-group-delivery__field">
+                  <label class="field-with-icon field-with-floating-label">
+                    <div class="field-with-icon__icon"><img src="images/icon/time.png" width="27" height="27"></div>
+                    <input class="field field_available field-with-icon__field field-with-floating-label__field">
+                    <div class="field-with-floating-label__label">Время доставки</div>
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="fieldset-order">
+              <legend class="fieldset-order__legend">Ваши данные</legend>
+              <div class="fieldset-order__line">
+                <label class="field-with-floating-label">
+                  <input class="field-with-floating-label__field field field_available">
+                  <div class="field-with-floating-label__label">Имя</div>
+                </label>
+              </div>
+              <div class="fieldset-order__line">
+                <div class="field-with-phone">
+                  <label class="field-with-floating-label">
+                    <input class="field-with-floating-label__field field-with-floating-label__field_focus field field_available field-with-phone__field" data-mask="+7 (999) 999-9999">
+                    <div class="field-with-floating-label__label">Телефон</div>
+                  </label>
+                  <div class="lang-switcher field-with-phone__switcher">
+                    <div class="lang-switcher__current"><img class="lang-switcher__icon" src="images/flag/kzt.png" alt="" width="24" height="18"></div>
+                    <div class="lang-switcher__content">
+                      <div class="lang-switcher__item" data-mask="+6 (999) 999-9999" data-placeholder="+6"><img class="lang-switcher__icon" src="images/flag/kzt.png" alt="" width="24" height="18"></div>
+                      <div class="lang-switcher__item" data-mask="+7 (999) 999-9999" data-placeholder="+7"><img class="lang-switcher__icon" src="images/flag/in.png" alt="" width="24" height="18"></div>
+                      <div class="lang-switcher__item" data-mask="+8 (999) 999-9999" data-placeholder="+8"><img class="lang-switcher__icon" src="images/flag/in-2.png" alt="" width="24" height="18"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="fieldset-order__line">
+                <label class="field-with-floating-label">
+                  <input class="field-with-floating-label__field field field_available">
+                  <div class="field-with-floating-label__label">эл.почта</div>
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="fieldset-order">
+              <legend class="fieldset-order__legend">Выберите способ оплаты</legend>
+              <div class="payment">
+                <div class="payment-tabs">
+                  <label class="payment-tabs__item payment-tabs__item_active"><img class="payment-tabs__icon" src="images/payment-type-1.png" alt="">
+                    <div class="payment-tabs__label">
+                      <input type="radio" name="payment">Банковская карта
+                    </div>
+                  </label>
+                  <label class="payment-tabs__item"><img class="payment-tabs__icon" src="images/payment-type-2.png" alt="">
+                    <div class="payment-tabs__label">
+                      <input type="radio" name="payment">Наличные
+                    </div>
+                  </label>
+                </div>
+                <div class="payment-content">
+                  <div class="payment-content__slogan">Безопасная оплата картой
+                    <div class="payment-content__subslogan">данные защищены по стандарту ALECHA PAKURA</div>
+                  </div>
+                  <div class="payment-content__title">Введите данные карты:</div><img class="payment-content__creditcard" src="images/card.png" alt="">
+                  <label class="payment-content__label">
+                    <input type="checkbox">Сохранить данные для дальнейших покупок
+                  </label>
+                  <hr class="payment-content__hr">
+                  <button class="payment-content__button" href="#">Оплатить 31 000 тг</button>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="foo section">
+      <div class="section__container">
+        <nav class="foo__nav foo-nav">
+          <div class="foo-nav__column foo-nav__column_double">
+            <h3 class="foo-nav__title">Пользователям</h3>
+            <ul class="foo-nav__list">
+              <li class="foo-nav__item"><a class="foo-nav__link" href="#">Как сделать заказ на LEKEN</a></li>
+              <li class="foo-nav__item"><a class="foo-nav__link" href="#">Оплата</a></li>
+              <li class="foo-nav__item"><a class="foo-nav__link" href="#">Доставка</a></li>
+              <li class="foo-nav__item"><a class="foo-nav__link" href="#">Возврат и обмен</a></li>
+              <li class="foo-nav__item"><a class="foo-nav__link" href="#">Помощь по сервису</a></li>
+              <li class="foo-nav__item"><a class="foo-nav__link" href="#">Пользовательское соглашение</a></li>
+              <li class="foo-nav__item"><a class="foo-nav__link" href="#">Обратная связь</a></li>
+            </ul>
+          </div>
+          <div class="foo-nav__column">
+            <h3 class="foo-nav__title">Флористам</h3>
+            <ul class="foo-nav__list">
+              <li class="foo-nav__item"><a class="foo-nav__link" href="#">Подключение к LEKEN</a></li>
+              <li class="foo-nav__item"><a class="foo-nav__link" href="#">Помощь для флористов</a></li>
+              <li class="foo-nav__item"><a class="foo-nav__link" href="#">Вход в личный кабинет</a></li>
+            </ul>
+          </div>
+        </nav>
+        <ul class="foo__social social">
+          <li class="social__item"><a class="social__link" href="#"><img src="images/facebook.png"></a></li>
+          <li class="social__item"><a class="social__link" href="#"><img src="images/instagram.png"></a></li>
+          <li class="social__item"><a class="social__link" href="#"><img src="images/vk.png"></a></li>
+        </ul>
+      </div>
+    </footer>
+    <div class="section copy">
+      <div class="section__container">Copyright © 2017 LEKEN, Inc. — The local florist marketplace</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

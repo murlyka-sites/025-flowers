@@ -1,0 +1,297 @@
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="SKYPE_TOOLBAR", content="SKYPE_TOOLBAR_PARSER_COMPATIBLE")
+		meta(content="telephone=no", name="format-detection")
+		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+		title Цветы - Главная
+		//- link(href="https://fonts.googleapis.com/css?family=Rubik:500|Ubuntu:400,700&amp;subset=cyrillic", rel="stylesheet")
+		//- link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css")
+		link(rel="stylesheet", href="css/style.css")
+		//- link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css")
+		
+		//- script(src="node_modules/pixel-glass/script.js")
+		//- link(href="node_modules/pixel-glass/styles.css" rel="stylesheet")
+		
+	body.page
+		
+		include blocks/header.pug
+
+		.section: .section__container: h1.index__title
+			b.typo_color_violet-eggplant LЕKEN
+			|  Заказывайте 
+			br
+			| свежие цветы 
+			br
+			| напрямую у флористов.
+		.address-delivery.section: .section__container: .address-delivery__container
+			.address-delivery__column
+				.address-delivery__label Город
+				input.address-delivery__field(value="Астана")
+
+			.address-delivery__column
+				.address-delivery__label Адрес
+				input.address-delivery__field(value="Улица, дом")
+
+			.address-delivery__column.address-delivery__column_checkbox
+				label.address-delivery__field 
+					input.address-delivery__checkbox-with-field(type="checkbox")
+					| не знаю адрес
+		.section.h-menu-first: .section__container
+			ul.h-menu-first__list
+				li.h-menu-first__item: a.h-menu-first__link.h-menu-first__link_active(href="#") Цветы
+				li.h-menu-first__item: a.h-menu-first__link(href="#") Подарки
+				li.h-menu-first__item: a.h-menu-first__link(href="#") Букеты
+				li.h-menu-first__item: a.h-menu-first__link(href="#") Композиции
+				li.h-menu-first__item: a.h-menu-first__link(href="#") Свадьба
+				li.h-menu-first__item: a.h-menu-first__link(href="#") Юбилей
+				li.h-menu-first__item: a.h-menu-first__link(href="#") День 
+					br
+					| рождения
+				li.h-menu-first__item: a.h-menu-first__link(href="#") Похороны
+				li.h-menu-first__item: a.h-menu-first__link(href="#") Жаймай
+				li.h-menu-first__item: a.h-menu-first__link(href="#") Кому 
+		.section.h-menu-last: .section__container
+			ul.h-menu-last__list
+				li.h-menu-last__item: a.h-menu-last__link(href="#")
+					.h-menu-last__icon: img(src="images/h-menu-icon/rose.png" width="31" height="51")
+					.h-menu-last__label Розы
+				li.h-menu-last__item: a.h-menu-last__link.h-menu-last__link_active(href="#")
+					.h-menu-last__icon: img(src="images/h-menu-icon/tulip.png" width="41" height="51")
+					.h-menu-last__label Тюльпаны
+				li.h-menu-last__item: a.h-menu-last__link(href="#")
+					.h-menu-last__icon: img(src="images/h-menu-icon/lily.png" width="43" height="51")
+					.h-menu-last__label Лилии
+				li.h-menu-last__item: a.h-menu-last__link(href="#")
+					.h-menu-last__icon: img(src="images/h-menu-icon/orchid.png" width="47" height="53")
+					.h-menu-last__label Орхидеи
+				li.h-menu-last__item: a.h-menu-last__link(href="#")
+					.h-menu-last__icon: img(src="images/h-menu-icon/hydrangea.png" width="61" height="53")
+					.h-menu-last__label Гортензии
+				li.h-menu-last__item: a.h-menu-last__link(href="#")
+					.h-menu-last__icon: img(src="images/h-menu-icon/peony.png" width="45" height="55")
+					.h-menu-last__label Пионы
+				li.h-menu-last__item: a.h-menu-last__link(href="#")
+					.h-menu-last__icon: img(src="images/h-menu-icon/lotus.png" width="51" height="51")
+					.h-menu-last__label Лотусы
+				li.h-menu-last__item: a.h-menu-last__link(href="#")
+					.h-menu-last__icon: img(src="images/h-menu-icon/sunflower.png" width="55" height="65")
+					.h-menu-last__label Подсолнухи
+				li.h-menu-last__item: a.h-menu-last__link(href="#")
+					.h-menu-last__icon: img(src="images/h-menu-icon/philodendron.png" width="61" height="75")
+					.h-menu-last__label Листочек
+				li.h-menu-last__item: a.h-menu-last__link(href="#")
+					.h-menu-last__icon: img(src="images/h-menu-icon/clover.png" width="55" height="69")
+					.h-menu-last__label Листочек
+		.section.grid-line.page__grid-line: .section__container
+			h3.typo__h3.grid-line__title
+				| Популярные
+				a.grid-line__side(href="#") Смотреть все
+					img.grid-line__side-arrow(src="images/icon/arrow-right.png" width="9" height="13")
+			.grid-slider-4
+				.grid-slider-4__item
+					a.card.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card/1.jpg" width="285" height="320")
+						.card__title Красные розы
+						hr.card__hr
+						.card__price 15 000 тнг
+				.grid-slider-4__item
+					a.card.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card/2.jpg" width="285" height="320")
+						.card__title Красные розы
+						hr.card__hr
+						.card__price 15 000 тнг
+				.grid-slider-4__item
+					a.card.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card/3.jpg" width="285" height="320")
+						.card__title Красные розы
+						hr.card__hr
+						.card__price 15 000 тнг
+				.grid-slider-4__item
+					a.card.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card/4.jpg" width="285" height="320")
+						.card__title Красные розы
+						hr.card__hr
+						.card__price 15 000 тнг
+				//- .grid-slider-4__item
+					div.grid-slider-4__card(style="height: 399px; background: red;")
+						img(src="images/card/4.jpg" width="285" height="320")
+		.section.grid-line.page__grid-line: .section__container
+			h3.typo__h3.grid-line__title
+				| Новинки
+				a.grid-line__side(href="#") Смотреть все
+					img.grid-line__side-arrow(src="images/icon/arrow-right.png" width="9" height="13")
+			.grid-slider-4
+				.grid-slider-4__item
+					a.card.card_pr.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card-pr/1.jpg" width="285" height="320")
+				.grid-slider-4__item
+					a.card.card_pr.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card-pr/2.jpg" width="285" height="320")
+				.grid-slider-4__item
+					a.card.card_pr.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card-pr/3.jpg" width="285" height="320")
+				.grid-slider-4__item
+					a.card.card_pr.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card-pr/1.jpg" width="285" height="320")
+		.section.grid-line.page__grid-line: .section__container
+			h3.typo__h3.grid-line__title
+				| Не дорого
+				a.grid-line__side(href="#") Смотреть все
+					img.grid-line__side-arrow(src="images/icon/arrow-right.png" width="9" height="13")
+			.grid-slider-4
+				.grid-slider-4__item
+					a.card.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card/1.jpg" width="285" height="320")
+						.card__title Красные розы
+						hr.card__hr
+						.card__price 15 000 тнг
+				.grid-slider-4__item
+					a.card.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card/2.jpg" width="285" height="320")
+						.card__title Красные розы
+						hr.card__hr
+						.card__price 15 000 тнг
+				.grid-slider-4__item
+					a.card.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card/3.jpg" width="285" height="320")
+						.card__title Красные розы
+						hr.card__hr
+						.card__price 15 000 тнг
+				.grid-slider-4__item
+					a.card.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card/4.jpg" width="285" height="320")
+						.card__title Красные розы
+						hr.card__hr
+						.card__price 15 000 тнг
+				.grid-slider-4__item
+					a.card.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card/4.jpg" width="285" height="320")
+						.card__title Красные розы
+						hr.card__hr
+						.card__price 15 000 тнг
+		.section.grid-line.page__grid-line: .section__container
+			h3.typo__h3.grid-line__title
+				| Особенные букеты
+				a.grid-line__side(href="#") Смотреть все
+					img.grid-line__side-arrow(src="images/icon/arrow-right.png" width="9" height="13")
+			.grid-slider-4
+				.grid-slider-4__item
+					a.card.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card/1.jpg" width="285" height="320")
+						.card__title Красные розы
+						hr.card__hr
+						.card__price 15 000 тнг
+				.grid-slider-4__item
+					a.card.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card/2.jpg" width="285" height="320")
+						.card__title Красные розы
+						hr.card__hr
+						.card__price 15 000 тнг
+				.grid-slider-4__item
+					a.card.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card/3.jpg" width="285" height="320")
+						.card__title Красные розы
+						hr.card__hr
+						.card__price 15 000 тнг
+				.grid-slider-4__item
+					a.card.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card/4.jpg" width="285" height="320")
+						.card__title Красные розы
+						hr.card__hr
+						.card__price 15 000 тнг
+		.section.grid-line.page__grid-line: .section__container
+			h3.typo__h3.grid-line__title
+				| Сладости
+				a.grid-line__side(href="#") Смотреть все
+					img.grid-line__side-arrow(src="images/icon/arrow-right.png" width="9" height="13")
+			.grid-slider-4
+				.grid-slider-4__item
+					a.card.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card/1.jpg" width="285" height="320")
+						.card__title Красные розы
+						hr.card__hr
+						.card__price 15 000 тнг
+				.grid-slider-4__item
+					a.card.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card/2.jpg" width="285" height="320")
+						.card__title Красные розы
+						hr.card__hr
+						.card__price 15 000 тнг
+				.grid-slider-4__item
+					a.card.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card/3.jpg" width="285" height="320")
+						.card__title Красные розы
+						hr.card__hr
+						.card__price 15 000 тнг
+				.grid-slider-4__item
+					a.card.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card/4.jpg" width="285" height="320")
+						.card__title Красные розы
+						hr.card__hr
+						.card__price 15 000 тнг
+		.section.grid-line.page__grid-line: .section__container
+			h3.typo__h3.grid-line__title
+				| Корзина
+				a.grid-line__side(href="#") Смотреть все
+					img.grid-line__side-arrow(src="images/icon/arrow-right.png" width="9" height="13")
+			.grid-slider-4
+				.grid-slider-4__item
+					a.card.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card/1.jpg" width="285" height="320")
+						.card__title Красные розы
+						hr.card__hr
+						.card__price 15 000 тнг
+				.grid-slider-4__item
+					a.card.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card/2.jpg" width="285" height="320")
+						.card__title Красные розы
+						hr.card__hr
+						.card__price 15 000 тнг
+				.grid-slider-4__item
+					a.card.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card/3.jpg" width="285" height="320")
+						.card__title Красные розы
+						hr.card__hr
+						.card__price 15 000 тнг
+				.grid-slider-4__item
+					a.card.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card/4.jpg" width="285" height="320")
+						.card__title Красные розы
+						hr.card__hr
+						.card__price 15 000 тнг
+		.section.grid-line.page__grid-line: .section__container
+			h3.typo__h3.grid-line__title
+				| Новинки
+				a.grid-line__side(href="#") Смотреть все
+					img.grid-line__side-arrow(src="images/icon/arrow-right.png" width="9" height="13")
+			.grid-slider-4
+				.grid-slider-4__item
+					a.card.card_pr.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card-pr/4.jpg" width="285" height="320")
+				.grid-slider-4__item
+					a.card.card_pr.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card-pr/5.jpg" width="285" height="320")
+				.grid-slider-4__item
+					a.card.card_pr.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card-pr/6.jpg" width="285" height="320")
+				.grid-slider-4__item
+					a.card.card_pr.grid-slider-4__card(href="#")
+						img.card__pr(src="images/card-pr/4.jpg" width="285" height="320")
+			a.grid-line__show-more.link-more(href="#") Показать ещё
+		.section.subscription: .section__container
+			.subscription__container
+				.subscription__title Узнавайте о выгодных предложениях и получайте личные рекомендац
+				form.subscription__form
+					input.subscription__input(type="email", placeholder="example@mail.com")
+					button.subscription__button Подписатся
+		
+		include blocks/foo.pug
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js")
+		script(src="js/jquery.formstyler.min.js")
+		//- script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js")
+		//- script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js")
+		script(src="js/main.js")

@@ -1,0 +1,123 @@
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="SKYPE_TOOLBAR", content="SKYPE_TOOLBAR_PARSER_COMPATIBLE")
+		meta(content="telephone=no", name="format-detection")
+		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+		title Цветы - Главная
+		//- link(href="https://fonts.googleapis.com/css?family=Rubik:500|Ubuntu:400,700&amp;subset=cyrillic", rel="stylesheet")
+		//- link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css")
+		link(rel="stylesheet", href="css/style.css")
+		//- link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css")
+		
+		//- script(src="node_modules/pixel-glass/script.js")
+		//- link(href="node_modules/pixel-glass/styles.css" rel="stylesheet")
+		
+	body.page
+		header.header
+			
+		include blocks/header.pug
+
+		.page-reviews.section: .section__container: .page-reviews__container
+			img.page-reviews__icon(src="images/reviews.png")
+			h1.typo__h1.page-reviews__title Отзывы о магазинах
+			.page-reviews__slogan Здесь собраны все отзывы о цветочных магазинах: с яндекс-маркет
+		.section: .section__container: nav.nav-tabs: ul.nav-tabs__list
+			li.nav-tabs__item: a.nav-tabs__link.nav-tabs__link_active(href="#") Магазины
+			li.nav-tabs__item: a.nav-tabs__link(href="#") Отзывы
+		.reviews-collapse.section: .section__container: .reviews-collapse__container.collapse
+			.reviews-collapse__header
+				h2.typo__h2.reviews-collapse__title Анютины цветы
+				.reviews-collapse__slogan Здесь собраны все отзывы о цветочных магазинах: с яндекс-маркет copy
+			.reviews-collapse__grid
+				.reviews-collapse__card.reviews-card
+					header.reviews-card__header
+						a(href="#"): img.reviews-card__pr(src="images/reviews-card/1.jpg" width="52" height="52")
+						div
+							a.reviews-card__title(href="#") Иван Иванов
+							.reviews-card__date 14 мая 2017
+					.reviews-card__desc Букет понравился, отличная доставка, теперь буду к вам обращаться!
+					.reviews-card__rating: .rating: .rating__current(style="width: 80%")
+				.reviews-collapse__card.reviews-card
+					header.reviews-card__header
+						a(href="#"): img.reviews-card__pr(src="images/reviews-card/2.jpg" width="52" height="52")
+						div
+							a.reviews-card__title(href="#") Александр Кан
+							.reviews-card__date 14 мая 2017
+					.reviews-card__desc Букет понравился, отличная доставка, теперь буду к вам обращаться!
+					.reviews-card__rating: .rating: .rating__current(style="width: 80%")
+				.reviews-collapse__card.reviews-card
+					header.reviews-card__header
+						a(href="#"): img.reviews-card__pr(src="images/reviews-card/3.jpg" width="52" height="52")
+						div
+							a.reviews-card__title(href="#") Анна Геслер
+							.reviews-card__date 14 мая 2017
+					.reviews-card__desc Букет понравился, отличная доставка, теперь буду к вам обращаться!
+					.reviews-card__rating: .rating: .rating__current(style="width: 80%")
+				.reviews-collapse__card.reviews-card
+					header.reviews-card__header
+						a(href="#"): img.reviews-card__pr(src="images/reviews-card/default.jpg" width="52" height="52")
+						div
+							a.reviews-card__title(href="#") Мария Кунст
+							.reviews-card__date 14 мая 2017
+					.reviews-card__desc Букет понравился, отличная доставка, теперь буду к вам обращаться!
+					.reviews-card__rating: .rating: .rating__current(style="width: 80%")
+				.reviews-collapse__card.reviews-card
+					header.reviews-card__header
+						a(href="#"): img.reviews-card__pr(src="images/reviews-card/5.jpg" width="52" height="52")
+						div
+							a.reviews-card__title(href="#") Зина Мерц
+							.reviews-card__date 14 мая 2017
+					.reviews-card__desc Букет понравился, отличная доставка, теперь буду к вам обращаться!
+					.reviews-card__rating: .rating: .rating__current(style="width: 80%")
+				.reviews-collapse__card.reviews-card
+					header.reviews-card__header
+						a(href="#"): img.reviews-card__pr(src="images/reviews-card/6.jpg" width="52" height="52")
+						div
+							a.reviews-card__title(href="#") Гарри Топоров
+							.reviews-card__date 14 мая 2017
+					.reviews-card__desc Букет понравился, отличная доставка, теперь буду к вам обращаться!
+					.reviews-card__rating: .rating: .rating__current(style="width: 80%")
+				.reviews-collapse__card.reviews-card
+					header.reviews-card__header
+						a(href="#"): img.reviews-card__pr(src="images/reviews-card/default.jpg" width="52" height="52")
+						div
+							a.reviews-card__title(href="#") Лиза Чайкина
+							.reviews-card__date 14 мая 2017
+					.reviews-card__desc Букет понравился, отличная доставка, теперь буду к вам обращаться!
+					.reviews-card__rating: .rating: .rating__current(style="width: 80%")
+				.reviews-collapse__card.reviews-card
+					header.reviews-card__header
+						a(href="#"): img.reviews-card__pr(src="images/reviews-card/8.jpg" width="52" height="52")
+						div
+							a.reviews-card__title(href="#") Паша Боев
+							.reviews-card__date 14 мая 2017
+					.reviews-card__desc Букет понравился, отличная доставка, теперь буду к вам обращаться!
+					.reviews-card__rating: .rating: .rating__current(style="width: 80%")
+		.reviews-shop.section: .section__container: .reviews-shop__container
+			each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+				.reviews-shop__card: .card-shop
+					.card-shop__header
+						.card-shop__rating
+							.rating.rating_small: .rating__current.rating__current_small(style="width: 70%")
+						.card-shop__val 3,8
+					a.card-shop__title(href="#") Корзинка цветов 
+					.card-shop__body
+						a(href="#"): img.card-shop__pr(src="images/card-shop.jpg" width="132" height="82")
+						.card-shop__info
+							.card-shop__address ул. Цветочная, д. 4 тел. 75-24-74
+							.card-shop__reviews 
+								img.card-shop__reviews-icon(src="images/reviews.png" width="20" height="20")
+								a.card-shop__reviews-text(href="#") 543 отзывов
+
+		include blocks/foo.pug
+		
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js")
+		script(src="js/jquery.formstyler.min.js")
+		//- script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js")
+		//- script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js")
+		script(src="js/main.js")

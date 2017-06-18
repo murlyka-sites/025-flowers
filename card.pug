@@ -1,0 +1,108 @@
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="SKYPE_TOOLBAR", content="SKYPE_TOOLBAR_PARSER_COMPATIBLE")
+		meta(content="telephone=no", name="format-detection")
+		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+		title Цветы - Главная
+		//- link(href="https://fonts.googleapis.com/css?family=Rubik:500|Ubuntu:400,700&amp;subset=cyrillic", rel="stylesheet")
+		//- link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css")
+		link(rel="stylesheet", href="css/style.css")
+		//- link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css")
+		
+		//- script(src="node_modules/pixel-glass/script.js")
+		//- link(href="node_modules/pixel-glass/styles.css" rel="stylesheet")
+		
+	body.page
+		include blocks/header.pug
+		
+		.breadcrumbs.section: .section__container: ul.breadcrumbs__list
+			li.breadcrumbs__item: a.breadcrumbs__link(href="#") Цветы в Москве
+			li.breadcrumbs__item: a.breadcrumbs__link(href="#") Букеты цветов
+			li.breadcrumbs__item: a.breadcrumbs__link(href="#") Магазин ННН
+			li.breadcrumbs__item: a.breadcrumbs__link(href="#") Букет Букет 13
+		.card-main.section: .section__container: .card-main__container
+			.card-slider.card-main__slider
+				.card-slider__status в наличии
+				.card-slider__prs
+					div: img(src="images/card.jpg")
+					div: img(src="images/card.jpg")
+					div: img(src="images/card.jpg")
+					div: img(src="images/card.jpg")
+				.card-slider__dots
+					div: img(src="images/card.jpg")
+					div: img(src="images/card.jpg")
+					div: img(src="images/card.jpg")
+					div: img(src="images/card.jpg")
+
+			.card-info.card-main__info
+				h3.card-info__title Роза бордовая
+				.card-info__body
+					.card-info__count 54 шт.
+					.card-info__desc 101 роза Талея 70 см, атласная лента.
+						br
+						| Букет из 101 розы всегда один из самых ярких подарков и один 
+						br
+						| из самых верных способов признания в любви.
+				.card-info__price 
+					img.card-info__price-icon(src="images/icon/price-tag.png" width="48" height="48")
+					span.card-info__price-value 4050
+					|  Р
+				.card-info__option
+					.button-group.button-group_available
+						button.button-group__button.button-group__button_active(data-price="4050")
+							.button-group__title Как на фото
+						button.button-group__button(data-price="5050")
+							.button-group__title Роскошный
+							.button-group__desc +30% цветов
+						button.button-group__button(data-price="6050")
+							.button-group__title VIP 
+								img(src="images/icon/vip.png" width="12" height="11")
+							.button-group__desc +60% цветов 
+				a.card-info__buy(href="#") Оформить заказ
+				footer.card-info__foo
+					a.card-info__florist.florist(href="#")
+						img.florist__pr(src="images/card-info-florist.jpg" width="74" height="74")
+						.florist__info
+							.florist__title Флорист
+							.florist__name Полина
+					.card-info__delivery.delivery-hint
+						img.delivery-hint__icon(src="images/time-left.png")
+						.delivery-hint__text
+							b Бесплатная доставка
+							br
+							| Возможна сегодня к 19:17
+		.twin-cards.sectioin: .section__container
+			h2.twin-cards__title Похожие букеты
+			.twin-cards__slider
+				each val in [1, 2, 3, 4, 1, 2, 3, 4]
+					div: a.twin-card(href="#")
+						.twin-card__rating 4.76
+						img.twin-card__pr(src="images/twin-card/"+val+".jpg" width="252" height="256")
+						.twin-card__price Купить за 5 124 р
+						.twin-card__delivery Бесплатная доставка через 3 ч
+		.buy-edge.section: .section__container
+			h2.buy-edge__title Преимущества покупки на сайте
+			.buy-edge__list
+				.buy-edge-card.buy-edge__item
+					.buy-edge-card__header: img.buy-edge-card__pr(src="images/bue-edge-card/1.png" width="66" height="95")
+					.buy-edge-card__title Покупайте напрямую у флористов
+					.buy-edge-card__desc В мире тысячи талантливых флористов, которых мы собрали на одном сайте. Вы получаете самую выгодную цену и персональный подход мастера. Система рейтинга и оценки качества позволяет вам покупать у лучших! 
+				.buy-edge-card.buy-edge__item
+					.buy-edge-card__header: img.buy-edge-card__pr(src="images/bue-edge-card/2.png" width="78" height="83")
+					.buy-edge-card__title Программа защиты покупателей
+					.buy-edge-card__desc В мире тысячи талантливых флористов, которых мы собрали на одном сайте. Вы получаете самую выгодную цену и персональный подход мастера. Система рейтинга и оценки качества позволяет вам покупать у лучших!
+				.buy-edge-card.buy-edge__item
+					.buy-edge-card__header: img.buy-edge-card__pr(src="images/bue-edge-card/3.png" width="90" height="85")
+					.buy-edge-card__title Обратная связь
+					.buy-edge-card__desc В мире тысячи талантливых флористов, которых мы собрали на одном сайте. Вы получаете самую выгодную цену и персональный подход мастера. Система рейтинга и оценки качества позволяет вам покупать у лучших! 
+		
+		include blocks/foo.pug
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js")
+		script(src="js/jquery.formstyler.min.js")
+		//- script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js")
+		//- script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js")
+		script(src="js/main.js")
