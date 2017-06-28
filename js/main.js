@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	svg4everybody();
 
 	$(".grid-slider-5").slick({
 		slidesToShow: 5,

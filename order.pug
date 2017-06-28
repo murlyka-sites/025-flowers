@@ -82,12 +82,12 @@ html
 						.field-group-delivery
 							.field-group-delivery__field
 								label.field-with-icon.field-with-floating-label
-									.field-with-icon__icon: img(src="images/icon/calendar.png" width="25" height="27")
+									.field-with-icon__icon: svg.svg-sprite(width="25" height="27"): use(xlink:href="images/sprite.svg#calendar")
 									input.field.field_available.field-with-icon__field.field-with-floating-label__field
 									.field-with-floating-label__label Дата доставки
 							.field-group-delivery__field
 								label.field-with-icon.field-with-floating-label
-									.field-with-icon__icon: img(src="images/icon/time.png" width="27" height="27")
+									.field-with-icon__icon: svg.svg-sprite(width="27" height="27"): use(xlink:href="images/sprite.svg#time")
 									input.field.field_available.field-with-icon__field.field-with-floating-label__field
 									.field-with-floating-label__label Время доставки
 					
@@ -121,13 +121,13 @@ html
 						.payment
 							.payment-tabs
 								label.payment-tabs__item.payment-tabs__item_active
-									img.payment-tabs__icon(src="images/payment-type-1.png", alt="")
+									svg.svg-sprite.payment-tabs__icon(width="35" height="31"): use(xlink:href="images/sprite.svg#payment-type-1")
 									.payment-tabs__label
 										input(type="radio" name="payment")
 										| Банковская карта
 
 								label.payment-tabs__item
-									img.payment-tabs__icon(src="images/payment-type-2.png", alt="")
+									svg.svg-sprite.payment-tabs__icon(width="32" height="29"): use(xlink:href="images/sprite.svg#payment-type-2")
 									.payment-tabs__label
 										input(type="radio" name="payment")
 										| Наличные

@@ -124,14 +124,22 @@
               <div class="field-group-delivery">
                 <div class="field-group-delivery__field">
                   <label class="field-with-icon field-with-floating-label">
-                    <div class="field-with-icon__icon"><img src="images/icon/calendar.png" width="25" height="27"></div>
+                    <div class="field-with-icon__icon">
+                      <svg class="svg-sprite" width="25" height="27">
+                        <use xlink:href="images/sprite.svg#calendar"></use>
+                      </svg>
+                    </div>
                     <input class="field field_available field-with-icon__field field-with-floating-label__field">
                     <div class="field-with-floating-label__label">Дата доставки</div>
                   </label>
                 </div>
                 <div class="field-group-delivery__field">
                   <label class="field-with-icon field-with-floating-label">
-                    <div class="field-with-icon__icon"><img src="images/icon/time.png" width="27" height="27"></div>
+                    <div class="field-with-icon__icon">
+                      <svg class="svg-sprite" width="27" height="27">
+                        <use xlink:href="images/sprite.svg#time"></use>
+                      </svg>
+                    </div>
                     <input class="field field_available field-with-icon__field field-with-floating-label__field">
                     <div class="field-with-floating-label__label">Время доставки</div>
                   </label>
@@ -173,12 +181,18 @@
               <legend class="fieldset-order__legend">Выберите способ оплаты</legend>
               <div class="payment">
                 <div class="payment-tabs">
-                  <label class="payment-tabs__item payment-tabs__item_active"><img class="payment-tabs__icon" src="images/payment-type-1.png" alt="">
+                  <label class="payment-tabs__item payment-tabs__item_active">
+                    <svg class="svg-sprite payment-tabs__icon" width="35" height="31">
+                      <use xlink:href="images/sprite.svg#payment-type-1"></use>
+                    </svg>
                     <div class="payment-tabs__label">
                       <input type="radio" name="payment">Банковская карта
                     </div>
                   </label>
-                  <label class="payment-tabs__item"><img class="payment-tabs__icon" src="images/payment-type-2.png" alt="">
+                  <label class="payment-tabs__item">
+                    <svg class="svg-sprite payment-tabs__icon" width="32" height="29">
+                      <use xlink:href="images/sprite.svg#payment-type-2"></use>
+                    </svg>
                     <div class="payment-tabs__label">
                       <input type="radio" name="payment">Наличные
                     </div>
@@ -226,9 +240,18 @@
           </div>
         </nav>
         <ul class="foo__social social">
-          <li class="social__item"><a class="social__link" href="#"><img src="images/facebook.png"></a></li>
-          <li class="social__item"><a class="social__link" href="#"><img src="images/instagram.png"></a></li>
-          <li class="social__item"><a class="social__link" href="#"><img src="images/vk.png"></a></li>
+          <li class="social__item"><a class="social__link" href="#">
+              <svg class="svg-sprite" width="30" height="30">
+                <use xlink:href="images/sprite.svg#social-fb"></use>
+              </svg></a></li>
+          <li class="social__item"><a class="social__link" href="#">
+              <svg class="svg-sprite" width="30" height="30">
+                <use xlink:href="images/sprite.svg#social-in"></use>
+              </svg></a></li>
+          <li class="social__item"><a class="social__link" href="#">
+              <svg class="svg-sprite" width="30" height="30">
+                <use xlink:href="images/sprite.svg#social-vk"></use>
+              </svg></a></li>
         </ul>
       </div>
     </footer>
@@ -328,6 +351,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.0/masonry.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.8/svg4everybody.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

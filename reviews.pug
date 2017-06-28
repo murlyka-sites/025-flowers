@@ -10,7 +10,7 @@ html
 		include blocks/header.pug
 
 		.page-reviews.section: .section__container: .page-reviews__container
-			img.page-reviews__icon(src="images/reviews.png")
+			svg.svg-sprite.page-reviews__icon(width="75" height="77"): use(xlink:href="images/sprite.svg#reviews")
 			h1.typo__h1.page-reviews__title Отзывы о магазинах
 			.page-reviews__slogan Здесь собраны все отзывы о цветочных магазинах: с яндекс-маркета, флампа, флоувау, йел и групп магазинов во вконтакте.
 		.section: .section__container: nav.nav-tabs(data-tab-content="#reviews-tab-content"): ul.nav-tabs__list
@@ -36,7 +36,7 @@ html
 						.card-shop__info
 							.card-shop__address ул. Цветочная, д. 4 тел. 75-24-74
 							.card-shop__reviews 
-								img.card-shop__reviews-icon(src="images/reviews.png" width="20" height="20")
+								svg.svg-sprite.card-shop__reviews-icon(width="20" height="20"): use(xlink:href="images/sprite.svg#reviews")
 								a.card-shop__reviews-text(href="#") 543 отзывов
 
 		include blocks/foo.pug

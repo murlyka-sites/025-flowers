@@ -17,8 +17,8 @@ footer.foo.section: .section__container
 				li.foo-nav__item: a.foo-nav__link(href="#") Помощь для флористов
 				li.foo-nav__item: a.foo-nav__link(href="#") Вход в личный кабинет
 	ul.foo__social.social
-		li.social__item: a.social__link(href="#"): img(src="images/facebook.png")
-		li.social__item: a.social__link(href="#"): img(src="images/instagram.png")
-		li.social__item: a.social__link(href="#"): img(src="images/vk.png")
+		li.social__item: a.social__link(href="#"): svg.svg-sprite(width="30" height="30"): use(xlink:href="images/sprite.svg#social-fb")
+		li.social__item: a.social__link(href="#"): svg.svg-sprite(width="30" height="30"): use(xlink:href="images/sprite.svg#social-in")
+		li.social__item: a.social__link(href="#"): svg.svg-sprite(width="30" height="30"): use(xlink:href="images/sprite.svg#social-vk")
 .section.copy: .section__container
 	| Copyright © 2017 LEKEN, Inc. — The local florist marketplace

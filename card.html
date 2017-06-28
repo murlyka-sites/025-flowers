@@ -64,7 +64,11 @@
               <div class="card-info__count">54 шт.</div>
               <div class="card-info__desc">101 роза Талея 70 см, атласная лента.<br>Букет из 101 розы всегда один из самых ярких подарков и один <br>из самых верных способов признания в любви.</div>
             </div>
-            <div class="card-info__price"> <img class="card-info__price-icon" src="images/icon/price-tag.png" width="48" height="48"><span class="card-info__price-value">4050</span> Р</div>
+            <div class="card-info__price"> 
+              <svg class="svg-sprite card-info__price-icon" width="48" height="48">
+                <use xlink:href="images/sprite.svg#price-tag"></use>
+              </svg><span class="card-info__price-value">4050</span> Р
+            </div>
             <div class="card-info__option">
               <div class="button-group button-group_available">
                 <button class="button-group__button button-group__button_active" data-price="4050">
@@ -75,7 +79,11 @@
                   <div class="button-group__desc">+30% цветов</div>
                 </button>
                 <button class="button-group__button" data-price="6050">
-                  <div class="button-group__title">VIP <img src="images/icon/vip.png" width="12" height="11"></div>
+                  <div class="button-group__title">VIP 
+                    <svg class="svg-sprite" width="12" height="11">
+                      <use xlink:href="images/sprite.svg#vip"></use>
+                    </svg>
+                  </div>
                   <div class="button-group__desc">+60% цветов </div>
                 </button>
               </div>
@@ -85,7 +93,10 @@
                   <div class="florist__title">Флорист</div>
                   <div class="florist__name">Полина</div>
                 </div></a>
-              <div class="card-info__delivery delivery-hint"><img class="delivery-hint__icon" src="images/time-left.png">
+              <div class="card-info__delivery delivery-hint">
+                <svg class="svg-sprite delivery-hint__icon" width="28" height="28">
+                  <use xlink:href="images/sprite.svg#time-left"></use>
+                </svg>
                 <div class="delivery-hint__text"><b>Бесплатная доставка</b><br>Возможна сегодня к 19:17</div>
               </div>
             </footer>
@@ -137,17 +148,29 @@
         <h2 class="buy-edge__title">Преимущества покупки на сайте</h2>
         <div class="buy-edge__list">
           <div class="buy-edge-card buy-edge__item">
-            <div class="buy-edge-card__header"><img class="buy-edge-card__pr" src="images/bue-edge-card/1.png" width="66" height="95"></div>
+            <div class="buy-edge-card__header">
+              <svg class="svg-sprite buy-edge-card__pr" width="66" height="95">
+                <use xlink:href="images/sprite.svg#bue-edge-card-1"></use>
+              </svg>
+            </div>
             <div class="buy-edge-card__title">Покупайте напрямую у флористов</div>
             <div class="buy-edge-card__desc">В мире тысячи талантливых флористов, которых мы собрали на одном сайте. Вы получаете самую выгодную цену и персональный подход мастера. Система рейтинга и оценки качества позволяет вам покупать у лучших! </div>
           </div>
           <div class="buy-edge-card buy-edge__item">
-            <div class="buy-edge-card__header"><img class="buy-edge-card__pr" src="images/bue-edge-card/2.png" width="78" height="83"></div>
+            <div class="buy-edge-card__header">
+              <svg class="svg-sprite buy-edge-card__pr" width="78" height="83">
+                <use xlink:href="images/sprite.svg#bue-edge-card-2"></use>
+              </svg>
+            </div>
             <div class="buy-edge-card__title">Программа защиты покупателей</div>
             <div class="buy-edge-card__desc">В мире тысячи талантливых флористов, которых мы собрали на одном сайте. Вы получаете самую выгодную цену и персональный подход мастера. Система рейтинга и оценки качества позволяет вам покупать у лучших!</div>
           </div>
           <div class="buy-edge-card buy-edge__item">
-            <div class="buy-edge-card__header"><img class="buy-edge-card__pr" src="images/bue-edge-card/3.png" width="90" height="85"></div>
+            <div class="buy-edge-card__header">
+              <svg class="svg-sprite buy-edge-card__pr" width="90" height="85">
+                <use xlink:href="images/sprite.svg#bue-edge-card-3"></use>
+              </svg>
+            </div>
             <div class="buy-edge-card__title">Обратная связь</div>
             <div class="buy-edge-card__desc">В мире тысячи талантливых флористов, которых мы собрали на одном сайте. Вы получаете самую выгодную цену и персональный подход мастера. Система рейтинга и оценки качества позволяет вам покупать у лучших! </div>
           </div>
@@ -179,9 +202,18 @@
           </div>
         </nav>
         <ul class="foo__social social">
-          <li class="social__item"><a class="social__link" href="#"><img src="images/facebook.png"></a></li>
-          <li class="social__item"><a class="social__link" href="#"><img src="images/instagram.png"></a></li>
-          <li class="social__item"><a class="social__link" href="#"><img src="images/vk.png"></a></li>
+          <li class="social__item"><a class="social__link" href="#">
+              <svg class="svg-sprite" width="30" height="30">
+                <use xlink:href="images/sprite.svg#social-fb"></use>
+              </svg></a></li>
+          <li class="social__item"><a class="social__link" href="#">
+              <svg class="svg-sprite" width="30" height="30">
+                <use xlink:href="images/sprite.svg#social-in"></use>
+              </svg></a></li>
+          <li class="social__item"><a class="social__link" href="#">
+              <svg class="svg-sprite" width="30" height="30">
+                <use xlink:href="images/sprite.svg#social-vk"></use>
+              </svg></a></li>
         </ul>
       </div>
     </footer>
@@ -281,6 +313,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.0/masonry.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.8/svg4everybody.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

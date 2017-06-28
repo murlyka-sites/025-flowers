@@ -45,40 +45,51 @@ html
 		.section.h-menu-last: .section__container
 			ul.h-menu-last__list
 				li.h-menu-last__item: a.h-menu-last__link(href="#")
-					.h-menu-last__icon: img(src="images/h-menu-icon/rose.png" width="31" height="51")
+					.h-menu-last__icon: svg.svg-sprite(width="31" height="51"): use(xlink:href="images/sprite.svg#menu-rose")
+					//- img(src="images/h-menu-icon/rose.png" width="31" height="51")
 					.h-menu-last__label Розы
 				li.h-menu-last__item: a.h-menu-last__link.h-menu-last__link_active(href="#")
-					.h-menu-last__icon: img(src="images/h-menu-icon/tulip.png" width="41" height="51")
+					.h-menu-last__icon: svg.svg-sprite(width="41" height="51"): use(xlink:href="images/sprite.svg#menu-tulip")
+						//- : img(src="images/h-menu-icon/tulip.png" width="41" height="51")
 					.h-menu-last__label Тюльпаны
 				li.h-menu-last__item: a.h-menu-last__link(href="#")
-					.h-menu-last__icon: img(src="images/h-menu-icon/lily.png" width="43" height="51")
+					.h-menu-last__icon: svg.svg-sprite(width="43" height="51"): use(xlink:href="images/sprite.svg#menu-lily")
+					//- .h-menu-last__icon: img(src="images/h-menu-icon/lily.png" width="43" height="51")
 					.h-menu-last__label Лилии
 				li.h-menu-last__item: a.h-menu-last__link(href="#")
-					.h-menu-last__icon: img(src="images/h-menu-icon/orchid.png" width="47" height="53")
+					.h-menu-last__icon: svg.svg-sprite(width="47" height="53"): use(xlink:href="images/sprite.svg#menu-orchid")
+					//- .h-menu-last__icon: img(src="images/h-menu-icon/orchid.png" width="47" height="53")
 					.h-menu-last__label Орхидеи
 				li.h-menu-last__item: a.h-menu-last__link(href="#")
-					.h-menu-last__icon: img(src="images/h-menu-icon/hydrangea.png" width="61" height="53")
+					.h-menu-last__icon: svg.svg-sprite(width="61" height="53"): use(xlink:href="images/sprite.svg#menu-hydrangea")
+					//- .h-menu-last__icon: img(src="images/h-menu-icon/hydrangea.png" width="61" height="53")
 					.h-menu-last__label Гортензии
 				li.h-menu-last__item: a.h-menu-last__link(href="#")
-					.h-menu-last__icon: img(src="images/h-menu-icon/peony.png" width="45" height="55")
+					.h-menu-last__icon: svg.svg-sprite(width="45" height="55"): use(xlink:href="images/sprite.svg#menu-peony")
+					//- .h-menu-last__icon: img(src="images/h-menu-icon/peony.png" width="45" height="55")
 					.h-menu-last__label Пионы
 				li.h-menu-last__item: a.h-menu-last__link(href="#")
-					.h-menu-last__icon: img(src="images/h-menu-icon/lotus.png" width="51" height="51")
+					.h-menu-last__icon: svg.svg-sprite(width="51" height="51"): use(xlink:href="images/sprite.svg#menu-lotus")
+					//- .h-menu-last__icon: img(src="images/h-menu-icon/lotus.png" width="51" height="51")
 					.h-menu-last__label Лотусы
 				li.h-menu-last__item: a.h-menu-last__link(href="#")
-					.h-menu-last__icon: img(src="images/h-menu-icon/sunflower.png" width="55" height="65")
+					.h-menu-last__icon: svg.svg-sprite(width="55" height="65"): use(xlink:href="images/sprite.svg#menu-sunflower")
+					//- .h-menu-last__icon: img(src="images/h-menu-icon/sunflower.png" width="55" height="65")
 					.h-menu-last__label Подсолнухи
 				li.h-menu-last__item: a.h-menu-last__link(href="#")
-					.h-menu-last__icon: img(src="images/h-menu-icon/philodendron.png" width="61" height="75")
+					.h-menu-last__icon: svg.svg-sprite(width="61" height="75"): use(xlink:href="images/sprite.svg#menu-philodendron")
+					//- .h-menu-last__icon: img(src="images/h-menu-icon/philodendron.png" width="61" height="75")
 					.h-menu-last__label Листочек
 				li.h-menu-last__item: a.h-menu-last__link(href="#")
-					.h-menu-last__icon: img(src="images/h-menu-icon/clover.png" width="55" height="69")
+					.h-menu-last__icon: svg.svg-sprite(width="55" height="69"): use(xlink:href="images/sprite.svg#menu-clover")
+					//- .h-menu-last__icon: img(src="images/h-menu-icon/clover.png" width="55" height="69")
 					.h-menu-last__label Листочек
 		.section.grid-line.page__grid-line: .section__container
 			h3.typo__h3.grid-line__title
 				| Популярные
 				a.grid-line__side(href="#") Смотреть все
-					img.grid-line__side-arrow(src="images/icon/arrow-right.png" width="9" height="13")
+					svg.svg-sprite.grid-line__side-arrow(width="9" height="13"): use(xlink:href="images/sprite.svg#arrow-right")
+
 			.grid-slider-4
 				.grid-slider-4__item
 					a.card.grid-slider-4__card(href="#")
@@ -111,7 +122,8 @@ html
 			h3.typo__h3.grid-line__title
 				| Новинки
 				a.grid-line__side(href="#") Смотреть все
-					img.grid-line__side-arrow(src="images/icon/arrow-right.png" width="9" height="13")
+					svg.svg-sprite.grid-line__side-arrow(width="9" height="13"): use(xlink:href="images/sprite.svg#arrow-right")
+
 			.grid-slider-4
 				.grid-slider-4__item
 					a.card.card_pr.grid-slider-4__card(href="#")
@@ -129,7 +141,8 @@ html
 			h3.typo__h3.grid-line__title
 				| Не дорого
 				a.grid-line__side(href="#") Смотреть все
-					img.grid-line__side-arrow(src="images/icon/arrow-right.png" width="9" height="13")
+					svg.svg-sprite.grid-line__side-arrow(width="9" height="13"): use(xlink:href="images/sprite.svg#arrow-right")
+
 			.grid-slider-4
 				.grid-slider-4__item
 					a.card.grid-slider-4__card(href="#")
@@ -165,7 +178,8 @@ html
 			h3.typo__h3.grid-line__title
 				| Особенные букеты
 				a.grid-line__side(href="#") Смотреть все
-					img.grid-line__side-arrow(src="images/icon/arrow-right.png" width="9" height="13")
+					svg.svg-sprite.grid-line__side-arrow(width="9" height="13"): use(xlink:href="images/sprite.svg#arrow-right")
+
 			.grid-slider-4
 				.grid-slider-4__item
 					a.card.grid-slider-4__card(href="#")
@@ -195,7 +209,8 @@ html
 			h3.typo__h3.grid-line__title
 				| Сладости
 				a.grid-line__side(href="#") Смотреть все
-					img.grid-line__side-arrow(src="images/icon/arrow-right.png" width="9" height="13")
+					svg.svg-sprite.grid-line__side-arrow(width="9" height="13"): use(xlink:href="images/sprite.svg#arrow-right")
+
 			.grid-slider-4
 				.grid-slider-4__item
 					a.card.grid-slider-4__card(href="#")
@@ -225,7 +240,8 @@ html
 			h3.typo__h3.grid-line__title
 				| Корзина
 				a.grid-line__side(href="#") Смотреть все
-					img.grid-line__side-arrow(src="images/icon/arrow-right.png" width="9" height="13")
+					svg.svg-sprite.grid-line__side-arrow(width="9" height="13"): use(xlink:href="images/sprite.svg#arrow-right")
+
 			.grid-slider-4
 				.grid-slider-4__item
 					a.card.grid-slider-4__card(href="#")
@@ -255,7 +271,8 @@ html
 			h3.typo__h3.grid-line__title
 				| Новинки
 				a.grid-line__side(href="#") Смотреть все
-					img.grid-line__side-arrow(src="images/icon/arrow-right.png" width="9" height="13")
+					svg.svg-sprite.grid-line__side-arrow(width="9" height="13"): use(xlink:href="images/sprite.svg#arrow-right")
+
 			.grid-slider-4
 				.grid-slider-4__item
 					a.card.card_pr.grid-slider-4__card(href="#")
