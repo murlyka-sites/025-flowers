@@ -1,19 +1,8 @@
 doctype html
 html
 	head
-		meta(charset="UTF-8")
-		meta(name="SKYPE_TOOLBAR", content="SKYPE_TOOLBAR_PARSER_COMPATIBLE")
-		meta(content="telephone=no", name="format-detection")
-		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
-		title Цветы - Главная
-		//- link(href="https://fonts.googleapis.com/css?family=Rubik:500|Ubuntu:400,700&amp;subset=cyrillic", rel="stylesheet")
-		//- link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css")
-		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css")
-		link(rel="stylesheet", href="css/style.css")
-		//- link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css")
-		
-		//- script(src="node_modules/pixel-glass/script.js")
-		//- link(href="node_modules/pixel-glass/styles.css" rel="stylesheet")
+		title Цветы - Оформить заказ
+		include blocks/head.pug
 		
 	body.page
 		
@@ -158,10 +147,5 @@ html
 
 		
 		include blocks/foo.pug
-		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
-		script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js")
-		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js")
-		script(src="js/jquery.formstyler.min.js")
-		//- script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js")
-		//- script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js")
-		script(src="js/main.js")
+		include blocks/hidden.pug
+		include blocks/scripts.pug

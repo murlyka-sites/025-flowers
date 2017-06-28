@@ -2,10 +2,12 @@
 
 $color-gentiana = #06131b
 $color-violet-eggplant = #971571
+
 $color-dark-gray = #818181
 $color-dim-gray = #5f5f5f
 $color-light-tegrai = #d0d0d0
-$color-gray = #767676;
+$color-gray = #767676
+$color-dark-purple = #b601cc
 $color-dark-purple-violet = #6e0ca8
 $color-heather-violet = #d7569c
 $color-pale-greenish-yellow = #ffe87e
@@ -187,7 +189,14 @@ a {
 	
 	&__container {
 		background #FFF 
-		box-shadow 0 0 29px rgba(0, 0, 0, 0.13)
+		
+		&_shop {
+			box-shadow 0 0 29px rgba(0, 0, 0, 0.13)
+		}
+		
+		@media (min-width $sm) {
+			box-shadow 0 0 29px rgba(0, 0, 0, 0.13)
+		}
 	}
 	
 	&__header {
@@ -447,6 +456,61 @@ a {
 	&:hover {
 		background-color darken($color-heather-violet, 20%)
 		text-decoration none
+	}
+}
+
+.button {
+	display inline-block
+	border none
+	box-sizing border-box
+	text-decoration none
+	text-align center
+	cursor pointer
+	
+	&:hover {
+		text-decoration none
+	}
+	
+	&_size {
+		&_sm {
+			padding 19px
+			border-radius 5px
+			font-size 14px 
+			font-weight 400
+		}
+		
+		&_md {
+			padding 35px 19px
+			border-radius 5px
+			font-size 18px 
+			font-weight 400
+		}
+	}
+	
+	&_available {
+		display block
+		width 100%
+	}
+	
+	&_theme {
+		&_dark-purple {
+			color white
+			background $color-dark-purple
+			
+			&:hover {
+				background lighten($color-dark-purple, 20%) 
+			}
+		}
+		
+		&_gray {
+			background-color #d8d7d8
+			color #232323
+			
+			&:hover {
+				background lighten(#d8d7d8, 20%)
+				color #232323
+			}
+		}
 	}
 }
 
@@ -2116,4 +2180,322 @@ a {
 	
 	
 
+}
+
+.reviews-catalog {
+	&_some {
+	
+	}
+	
+	&__more {
+		margin-top 20px
+		
+		@media (min-width $md) {
+			margin-top 52px	
+		}
+	}	
+	// column-count 3
+	
+	box-sizing border-box
+	padding 5px 
+	// column-width 325px
+	// column-gap 5px
+	
+	@media (min-width $sm) {
+		// padding 30px
+	}
+	
+	@media (min-width $md) {
+		// column-width 350px
+		// column-gap 20px
+	}
+	
+	&__item {
+		// -webkit-column-break-inside: avoid;
+		// break-inside: avoid;
+		box-sizing border-box
+		padding 0 0 30px 
+		width 100%
+		
+		@media (min-width $sm) {
+			width 50%
+			padding 15px
+		}
+		
+		
+		@media (min-width $lg) {
+			width 33.3%
+		}
+	}
+}
+
+.reviews-catalog-card {
+	
+	box-sizing border-box
+	padding 30px
+	font-size 14px
+	color #232323
+	box-shadow 0 0 15px rgba(0, 0, 0, 0.13)
+	border-radius 5px
+	background-color #ffffff
+	
+	&__row {
+		display flex
+		justify-content space-between
+		align-items center
+	}
+	
+	&__row-side {
+		min-width 0		
+	}
+	
+	&__first-row {
+		margin-bottom 20px
+	}
+	
+	&__second-row {
+		margin-bottom 30px
+	}
+	
+	&__photo-row {
+		margin-bottom 15px
+	}
+	
+	&__photo-side {
+		
+	}
+	
+	&__body {
+		margin-bottom 20px
+	}
+	
+	&__rating {
+		display flex
+		justify-content flex-end
+	}
+	
+	&__rating-icon {
+		margin-right 10px
+	}
+
+	&__shop-label {
+	}
+	
+	&__shop-name {
+		font-size 18px
+		font-weight 700 
+	}
+	
+	&__author {
+		font-size 18px
+	}
+	
+	&__date {
+	}
+	
+	&__opinion {
+		position relative
+		padding-left 18px
+		margin-bottom 25px
+		
+		&:before,
+		&:after {
+			color #b507cb
+			font-weight 700
+			// display inline-block		
+		}
+		
+		&:before {
+			content "«"
+			position absolute
+			left -3px
+			top -9px
+			font-size 35px
+			line-height 1
+		}
+		
+		&:after {
+			vertical-align middle
+			margin-left 2px
+			content "»"
+			font-size 20px
+			line-height 4px 
+		}
+	}
+	
+	&__photo {
+		margin-bottom 10px
+		max-width 100%
+		height auto 
+	}
+}
+
+.add-reviews {
+	width 520px
+	max-width 100%
+	padding 25px 15px !important
+	font-size 14px 
+	color #232323
+	
+	@media (min-width $sm) {
+		padding 57px 60px !important
+	}
+	
+	&__shop {
+		margin-bottom 40px
+		
+		&-label {
+			margin-bottom 14px 
+		}
+		
+		&-name {
+			color #151515
+			font-size 18px
+			font-weight 700 
+		}
+	}
+	
+	&__product {
+		margin-bottom 35px
+		color #151515
+		font-size 18px
+		
+		&-name  {
+			font-weight 700 
+		}
+	}
+	
+	&__rating-row {
+		display flex
+		justify-content space-between
+		align-items center
+		width 280px
+		max-width 100%
+		margin-bottom 20px
+	}
+	
+	&__rating {
+		&-label {
+			min-width 0
+		}
+	}
+	
+	&__photo-title {
+		margin-bottom 30px
+		color #151515
+	}
+
+	&__photo-row {
+		display flex
+		justify-content space-between
+		margin-bottom 40px
+	}
+		
+	&__photo {
+		max-width 100%
+		height auto
+		margin-bottom 15px
+		
+	}
+	
+	&__opinion {
+		display block
+		box-sizing border-box
+		width 100%
+		height 155px
+		padding 19px 20px
+		margin-bottom 64px
+		resize none
+		border-radius 5px 4px 4px 5px
+		border 1px solid #ceb0d2
+		font-size 14px
+		color #757575
+	}
+}
+
+.rating-field {
+	position relative
+	display flex
+	width 22px * 5
+	height 18px
+	background url(../images/rating.png)
+	
+	&__star {
+		position absolute
+		top 0
+		left 0 
+		bottom 0
+		cursor pointer
+		
+		&:nth-child(1) {
+			width 20%
+			z-index 5 
+		}
+		
+		&:nth-child(2) {
+			width 40%
+			z-index 4
+		} 
+
+		&:nth-child(3) {
+			width 60%
+			z-index 3 
+		}
+		
+		&:nth-child(4) {
+			width 80% 
+			z-index 2
+		}
+		
+		&:nth-child(5) {
+			width 100%
+			z-index 1 
+		}	
+	
+		&_active,
+		&:hover {
+			background url(../images/rating-current.png)
+		}	
+
+	}
+	
+
+
+	&__input {
+		display none
+	}
+}
+
+.tab-content {
+	&__item {
+		display none
+		
+		&_active {
+			display block
+		}
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity 0
+	}
+	
+	100% {
+		opacity 1
+	}
+}
+
+@keyframes fadeOut {
+	100% {
+		opacity 1
+	}
+	
+	0% {
+		opacity 0
+	}
+}
+
+.hidden {
+	display none
 }

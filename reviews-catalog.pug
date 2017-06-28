@@ -1,0 +1,24 @@
+doctype html
+html
+	head
+		title Цветы - каталог
+		include blocks/head.pug
+		
+	body.page
+		header.header
+			
+		include blocks/header.pug
+
+		.page-reviews.section: .section__container: .page-reviews__container
+			img.page-reviews__icon(src="images/reviews.png")
+			h1.typo__h1.page-reviews__title Отзывы о магазинах
+			.page-reviews__slogan Здесь собраны все отзывы о цветочных магазинах: с яндекс-маркета, флампа, флоувау, йел и групп магазинов во вконтакте.
+		.section: .section__container: nav.nav-tabs: ul.nav-tabs__list
+			li.nav-tabs__item: a.nav-tabs__link(href="#") Магазины
+			li.nav-tabs__item: a.nav-tabs__link.nav-tabs__link_active(href="#") Отзывы
+		
+
+		
+		include blocks/foo.pug
+		include blocks/hidden.pug
+		include blocks/scripts.pug

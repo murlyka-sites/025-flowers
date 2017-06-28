@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Цветы - Отзывы</title>
     <meta charset="UTF-8">
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
     <meta content="telephone=no" name="format-detection">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Цветы - Главная</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css">
   </head>
   <body class="page">
     <header class="header"></header>
@@ -34,13 +35,13 @@
       <div class="section__container">
         <div class="page-reviews__container"><img class="page-reviews__icon" src="images/reviews.png">
           <h1 class="typo__h1 page-reviews__title">Отзывы о магазинах</h1>
-          <div class="page-reviews__slogan">Здесь собраны все отзывы о цветочных магазинах: с яндекс-маркет</div>
+          <div class="page-reviews__slogan">Здесь собраны все отзывы о цветочных магазинах: с яндекс-маркета, флампа, флоувау, йел и групп магазинов во вконтакте.</div>
         </div>
       </div>
     </div>
     <div class="section">
       <div class="section__container">
-        <nav class="nav-tabs">
+        <nav class="nav-tabs" data-tab-content="#reviews-tab-content">
           <ul class="nav-tabs__list">
             <li class="nav-tabs__item"><a class="nav-tabs__link nav-tabs__link_active" href="#">Магазины</a></li>
             <li class="nav-tabs__item"><a class="nav-tabs__link" href="#">Отзывы</a></li>
@@ -48,119 +49,501 @@
         </nav>
       </div>
     </div>
-    <div class="reviews-collapse section">
-      <div class="section__container">
-        <div class="reviews-collapse__container collapse">
-          <div class="reviews-collapse__header">
-            <h2 class="typo__h2 reviews-collapse__title">Анютины цветы</h2>
-            <div class="reviews-collapse__slogan">Здесь собраны все отзывы о цветочных магазинах: с яндекс-маркет copy</div>
+    <div class="tab-content" id="reviews-tab-content">
+      <div class="tab-content__item tab-content__item_active">
+        <div class="reviews-collapse section">
+          <div class="section__container">
+            <div class="reviews-collapse__container reviews-collapse__container_shop collapse">
+              <div class="reviews-collapse__header">
+                <h2 class="typo__h2 reviews-collapse__title">Анютины цветы</h2>
+                <div class="reviews-collapse__slogan">Здесь собраны все отзывы о цветочных магазинах: с яндекс-маркет copy</div>
+              </div>
+              <div class="reviews-collapse__grid">
+                <div class="reviews-collapse__card reviews-card">
+                  <header class="reviews-card__header"><a href="#"><img class="reviews-card__pr" src="images/reviews-card/1.jpg" width="52" height="52"></a>
+                    <div><a class="reviews-card__title" href="#">Иван Иванов</a>
+                      <div class="reviews-card__date">14 мая 2017</div>
+                    </div>
+                  </header>
+                  <div class="reviews-card__desc">Букет понравился, отличная доставка, теперь буду к вам обращаться!</div>
+                  <div class="reviews-card__rating">
+                    <div class="rating">
+                      <div class="rating__current" style="width: 80%;"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-collapse__card reviews-card">
+                  <header class="reviews-card__header"><a href="#"><img class="reviews-card__pr" src="images/reviews-card/2.jpg" width="52" height="52"></a>
+                    <div><a class="reviews-card__title" href="#">Александр Кан</a>
+                      <div class="reviews-card__date">14 мая 2017</div>
+                    </div>
+                  </header>
+                  <div class="reviews-card__desc">Букет понравился, отличная доставка, теперь буду к вам обращаться!</div>
+                  <div class="reviews-card__rating">
+                    <div class="rating">
+                      <div class="rating__current" style="width: 80%;"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-collapse__card reviews-card">
+                  <header class="reviews-card__header"><a href="#"><img class="reviews-card__pr" src="images/reviews-card/3.jpg" width="52" height="52"></a>
+                    <div><a class="reviews-card__title" href="#">Анна Геслер</a>
+                      <div class="reviews-card__date">14 мая 2017</div>
+                    </div>
+                  </header>
+                  <div class="reviews-card__desc">Букет понравился, отличная доставка, теперь буду к вам обращаться!</div>
+                  <div class="reviews-card__rating">
+                    <div class="rating">
+                      <div class="rating__current" style="width: 80%;"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-collapse__card reviews-card">
+                  <header class="reviews-card__header"><a href="#"><img class="reviews-card__pr" src="images/reviews-card/default.jpg" width="52" height="52"></a>
+                    <div><a class="reviews-card__title" href="#">Мария Кунст</a>
+                      <div class="reviews-card__date">14 мая 2017</div>
+                    </div>
+                  </header>
+                  <div class="reviews-card__desc">Букет понравился, отличная доставка, теперь буду к вам обращаться!</div>
+                  <div class="reviews-card__rating">
+                    <div class="rating">
+                      <div class="rating__current" style="width: 80%;"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-collapse__card reviews-card">
+                  <header class="reviews-card__header"><a href="#"><img class="reviews-card__pr" src="images/reviews-card/5.jpg" width="52" height="52"></a>
+                    <div><a class="reviews-card__title" href="#">Зина Мерц</a>
+                      <div class="reviews-card__date">14 мая 2017</div>
+                    </div>
+                  </header>
+                  <div class="reviews-card__desc">Букет понравился, отличная доставка, теперь буду к вам обращаться!</div>
+                  <div class="reviews-card__rating">
+                    <div class="rating">
+                      <div class="rating__current" style="width: 80%;"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-collapse__card reviews-card">
+                  <header class="reviews-card__header"><a href="#"><img class="reviews-card__pr" src="images/reviews-card/6.jpg" width="52" height="52"></a>
+                    <div><a class="reviews-card__title" href="#">Гарри Топоров</a>
+                      <div class="reviews-card__date">14 мая 2017</div>
+                    </div>
+                  </header>
+                  <div class="reviews-card__desc">Букет понравился, отличная доставка, теперь буду к вам обращаться!</div>
+                  <div class="reviews-card__rating">
+                    <div class="rating">
+                      <div class="rating__current" style="width: 80%;"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-collapse__card reviews-card">
+                  <header class="reviews-card__header"><a href="#"><img class="reviews-card__pr" src="images/reviews-card/default.jpg" width="52" height="52"></a>
+                    <div><a class="reviews-card__title" href="#">Лиза Чайкина</a>
+                      <div class="reviews-card__date">14 мая 2017</div>
+                    </div>
+                  </header>
+                  <div class="reviews-card__desc">Букет понравился, отличная доставка, теперь буду к вам обращаться!</div>
+                  <div class="reviews-card__rating">
+                    <div class="rating">
+                      <div class="rating__current" style="width: 80%;"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-collapse__card reviews-card">
+                  <header class="reviews-card__header"><a href="#"><img class="reviews-card__pr" src="images/reviews-card/8.jpg" width="52" height="52"></a>
+                    <div><a class="reviews-card__title" href="#">Паша Боев</a>
+                      <div class="reviews-card__date">14 мая 2017</div>
+                    </div>
+                  </header>
+                  <div class="reviews-card__desc">Букет понравился, отличная доставка, теперь буду к вам обращаться!</div>
+                  <div class="reviews-card__rating">
+                    <div class="rating">
+                      <div class="rating__current" style="width: 80%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="reviews-collapse__grid">
-            <div class="reviews-collapse__card reviews-card">
-              <header class="reviews-card__header"><a href="#"><img class="reviews-card__pr" src="images/reviews-card/1.jpg" width="52" height="52"></a>
-                <div><a class="reviews-card__title" href="#">Иван Иванов</a>
-                  <div class="reviews-card__date">14 мая 2017</div>
-                </div>
-              </header>
-              <div class="reviews-card__desc">Букет понравился, отличная доставка, теперь буду к вам обращаться!</div>
-              <div class="reviews-card__rating">
-                <div class="rating">
-                  <div class="rating__current" style="width: 80%;"></div>
-                </div>
-              </div>
-            </div>
-            <div class="reviews-collapse__card reviews-card">
-              <header class="reviews-card__header"><a href="#"><img class="reviews-card__pr" src="images/reviews-card/2.jpg" width="52" height="52"></a>
-                <div><a class="reviews-card__title" href="#">Александр Кан</a>
-                  <div class="reviews-card__date">14 мая 2017</div>
-                </div>
-              </header>
-              <div class="reviews-card__desc">Букет понравился, отличная доставка, теперь буду к вам обращаться!</div>
-              <div class="reviews-card__rating">
-                <div class="rating">
-                  <div class="rating__current" style="width: 80%;"></div>
-                </div>
-              </div>
-            </div>
-            <div class="reviews-collapse__card reviews-card">
-              <header class="reviews-card__header"><a href="#"><img class="reviews-card__pr" src="images/reviews-card/3.jpg" width="52" height="52"></a>
-                <div><a class="reviews-card__title" href="#">Анна Геслер</a>
-                  <div class="reviews-card__date">14 мая 2017</div>
-                </div>
-              </header>
-              <div class="reviews-card__desc">Букет понравился, отличная доставка, теперь буду к вам обращаться!</div>
-              <div class="reviews-card__rating">
-                <div class="rating">
-                  <div class="rating__current" style="width: 80%;"></div>
-                </div>
-              </div>
-            </div>
-            <div class="reviews-collapse__card reviews-card">
-              <header class="reviews-card__header"><a href="#"><img class="reviews-card__pr" src="images/reviews-card/default.jpg" width="52" height="52"></a>
-                <div><a class="reviews-card__title" href="#">Мария Кунст</a>
-                  <div class="reviews-card__date">14 мая 2017</div>
-                </div>
-              </header>
-              <div class="reviews-card__desc">Букет понравился, отличная доставка, теперь буду к вам обращаться!</div>
-              <div class="reviews-card__rating">
-                <div class="rating">
-                  <div class="rating__current" style="width: 80%;"></div>
-                </div>
-              </div>
-            </div>
-            <div class="reviews-collapse__card reviews-card">
-              <header class="reviews-card__header"><a href="#"><img class="reviews-card__pr" src="images/reviews-card/5.jpg" width="52" height="52"></a>
-                <div><a class="reviews-card__title" href="#">Зина Мерц</a>
-                  <div class="reviews-card__date">14 мая 2017</div>
-                </div>
-              </header>
-              <div class="reviews-card__desc">Букет понравился, отличная доставка, теперь буду к вам обращаться!</div>
-              <div class="reviews-card__rating">
-                <div class="rating">
-                  <div class="rating__current" style="width: 80%;"></div>
-                </div>
-              </div>
-            </div>
-            <div class="reviews-collapse__card reviews-card">
-              <header class="reviews-card__header"><a href="#"><img class="reviews-card__pr" src="images/reviews-card/6.jpg" width="52" height="52"></a>
-                <div><a class="reviews-card__title" href="#">Гарри Топоров</a>
-                  <div class="reviews-card__date">14 мая 2017</div>
-                </div>
-              </header>
-              <div class="reviews-card__desc">Букет понравился, отличная доставка, теперь буду к вам обращаться!</div>
-              <div class="reviews-card__rating">
-                <div class="rating">
-                  <div class="rating__current" style="width: 80%;"></div>
-                </div>
-              </div>
-            </div>
-            <div class="reviews-collapse__card reviews-card">
-              <header class="reviews-card__header"><a href="#"><img class="reviews-card__pr" src="images/reviews-card/default.jpg" width="52" height="52"></a>
-                <div><a class="reviews-card__title" href="#">Лиза Чайкина</a>
-                  <div class="reviews-card__date">14 мая 2017</div>
-                </div>
-              </header>
-              <div class="reviews-card__desc">Букет понравился, отличная доставка, теперь буду к вам обращаться!</div>
-              <div class="reviews-card__rating">
-                <div class="rating">
-                  <div class="rating__current" style="width: 80%;"></div>
-                </div>
-              </div>
-            </div>
-            <div class="reviews-collapse__card reviews-card">
-              <header class="reviews-card__header"><a href="#"><img class="reviews-card__pr" src="images/reviews-card/8.jpg" width="52" height="52"></a>
-                <div><a class="reviews-card__title" href="#">Паша Боев</a>
-                  <div class="reviews-card__date">14 мая 2017</div>
-                </div>
-              </header>
-              <div class="reviews-card__desc">Букет понравился, отличная доставка, теперь буду к вам обращаться!</div>
-              <div class="reviews-card__rating">
-                <div class="rating">
-                  <div class="rating__current" style="width: 80%;"></div>
+        </div>
+      </div>
+      <div class="tab-content__item">
+        <div class="reviews-collapse section">
+          <div class="section__container">
+            <div class="reviews-collapse__container collapse">
+              <div class="reviews-catalog">
+                <div class="reviews-catalog__masonry">
+                  <div class="reviews-catalog__item">
+                    <div class="reviews-catalog-card">
+                      <header class="reviews-catalog-card__header">
+                        <div class="reviews-catalog-card__row reviews-catalog-card__first-row">
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reviews-catalog-card__shop-label">магазин</div>
+                            <div class="reviews-catalog-card__shop-name">Цветы для любимой</div>
+                          </div>
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reivews-catalog-card__vote"><img src="images/vote/like.png" width="20" height="22"></div>
+                          </div>
+                        </div>
+                        <div class="reviews-catalog-card__row reviews-catalog-card__second-row">
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reviews-catalog-card__author">Анна</div>
+                            <div class="reviews-catalog-card__date">14 мая 2017</div>
+                          </div>
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reviews-catalog-card__rating">
+                              <div class="rating">
+                                <div class="rating__current" style="width: 100%;"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </header>
+                      <div class="reviews-catalog-card__body">
+                        <div class="reviews-catalog-card__opinion">Доставили в срок, очень понравилась карточка, свежие цветы, очень понравился улыбчивый курьер, буду всегда у вас заказывать теперь.</div>
+                        <div class="reviews-catalog-card__row reviews-catalog-card__photo-row">
+                          <div class="reviews-catalog-card__row-side"><img class="reviews-catalog-card__photo" src="images/reviews-catalog-card/1-before.jpg">
+                            <div class="reviews-catalog-card__photo-label">На сайте</div>
+                          </div>
+                          <div class="reviews-catalog-card__row-side"><img class="reviews-catalog-card__photo" src="images/reviews-catalog-card/1-after.jpg" width="137" height="106">
+                            <div class="reviews-catalog-card__photo-label">Перед доставкой</div>
+                          </div>
+                        </div>
+                      </div>
+                      <footer class="reviews-catalog-card__foo"><a class="button button_size_sm button_theme_dark-purple button_available" href="#">Заказать такой же</a></footer>
+                    </div>
+                  </div>
+                  <div class="reviews-catalog__item">
+                    <div class="reviews-catalog-card">
+                      <header class="reviews-catalog-card__header">
+                        <div class="reviews-catalog-card__row reviews-catalog-card__first-row">
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reviews-catalog-card__shop-label">магазин</div>
+                            <div class="reviews-catalog-card__shop-name">Волшебный букет</div>
+                          </div>
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reivews-catalog-card__vote"><img src="images/vote/dislike.png" width="20" height="22"></div>
+                          </div>
+                        </div>
+                        <div class="reviews-catalog-card__row reviews-catalog-card__second-row">
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reviews-catalog-card__author">Маша</div>
+                            <div class="reviews-catalog-card__date">14 мая 2017</div>
+                          </div>
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reviews-catalog-card__rating">
+                              <div class="rating">
+                                <div class="rating__current" style="width: 20%;"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </header>
+                      <div class="reviews-catalog-card__body">
+                        <div class="reviews-catalog-card__opinion">Букет которыйя заказывала был с белыми и ярко оранжевыми розами. А доставили с бардовыми((( Меня это очень расстроило т.к. хотелось сделать яркий букет в подарок! Если не было таких роз как на картинке навеное можно было сообщить об этом, чтобы у меня была возможность выбрать другой букет. Часто заказываю у Вас, но в этот раз очень разочарована! Не хочется таких сюрпризов.</div>
+                        <div class="reviews-catalog-card__row reviews-catalog-card__photo-row">
+                          <div class="reviews-catalog-card__row-side"><img class="reviews-catalog-card__photo" src="images/reviews-catalog-card/2-before.jpg">
+                            <div class="reviews-catalog-card__photo-label">На сайте</div>
+                          </div>
+                          <div class="reviews-catalog-card__row-side"><img class="reviews-catalog-card__photo" src="images/reviews-catalog-card/2-after.jpg" width="137" height="106">
+                            <div class="reviews-catalog-card__photo-label">Перед доставкой</div>
+                          </div>
+                        </div>
+                      </div>
+                      <footer class="reviews-catalog-card__foo"><a class="button button_size_sm button_theme_dark-purple button_available" href="#">Заказать такой же</a></footer>
+                    </div>
+                  </div>
+                  <div class="reviews-catalog__item">
+                    <div class="reviews-catalog-card">
+                      <header class="reviews-catalog-card__header">
+                        <div class="reviews-catalog-card__row reviews-catalog-card__first-row">
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reviews-catalog-card__shop-label">магазин</div>
+                            <div class="reviews-catalog-card__shop-name">Радужная корзина</div>
+                          </div>
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reivews-catalog-card__vote"><img src="images/vote/like.png" width="20" height="22"></div>
+                          </div>
+                        </div>
+                        <div class="reviews-catalog-card__row reviews-catalog-card__second-row">
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reviews-catalog-card__author">Антон</div>
+                            <div class="reviews-catalog-card__date">14 мая 2017</div>
+                          </div>
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reviews-catalog-card__rating">
+                              <div class="rating">
+                                <div class="rating__current" style="width: 100%;"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </header>
+                      <div class="reviews-catalog-card__body">
+                        <div class="reviews-catalog-card__row reviews-catalog-card__photo-row">
+                          <div class="reviews-catalog-card__row-side"><img class="reviews-catalog-card__photo" src="images/reviews-catalog-card/1-before.jpg">
+                            <div class="reviews-catalog-card__photo-label">На сайте</div>
+                          </div>
+                          <div class="reviews-catalog-card__row-side"><img class="reviews-catalog-card__photo" src="images/reviews-catalog-card/1-after.jpg" width="137" height="106">
+                            <div class="reviews-catalog-card__photo-label">Перед доставкой</div>
+                          </div>
+                        </div>
+                      </div>
+                      <footer class="reviews-catalog-card__foo"><a class="button button_size_sm button_theme_dark-purple button_available" href="#">Заказать такой же</a></footer>
+                    </div>
+                  </div>
+                  <div class="reviews-catalog__item">
+                    <div class="reviews-catalog-card">
+                      <header class="reviews-catalog-card__header">
+                        <div class="reviews-catalog-card__row reviews-catalog-card__first-row">
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reviews-catalog-card__shop-label">магазин</div>
+                            <div class="reviews-catalog-card__shop-name">Цветы для любимой</div>
+                          </div>
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reivews-catalog-card__vote"><img src="images/vote/like.png" width="20" height="22"></div>
+                          </div>
+                        </div>
+                        <div class="reviews-catalog-card__row reviews-catalog-card__second-row">
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reviews-catalog-card__author">Анна</div>
+                            <div class="reviews-catalog-card__date">14 мая 2017</div>
+                          </div>
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reviews-catalog-card__rating">
+                              <div class="rating">
+                                <div class="rating__current" style="width: 100%;"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </header>
+                      <div class="reviews-catalog-card__body">
+                        <div class="reviews-catalog-card__opinion">Доставили в срок, очень понравилась карточка, свежие цветы, очень понравился улыбчивый курьер, буду всегда у вас заказывать теперь.</div>
+                        <div class="reviews-catalog-card__row reviews-catalog-card__photo-row">
+                          <div class="reviews-catalog-card__row-side"><img class="reviews-catalog-card__photo" src="images/reviews-catalog-card/1-before.jpg">
+                            <div class="reviews-catalog-card__photo-label">На сайте</div>
+                          </div>
+                          <div class="reviews-catalog-card__row-side"><img class="reviews-catalog-card__photo" src="images/reviews-catalog-card/1-after.jpg" width="137" height="106">
+                            <div class="reviews-catalog-card__photo-label">Перед доставкой</div>
+                          </div>
+                        </div>
+                      </div>
+                      <footer class="reviews-catalog-card__foo"><a class="button button_size_sm button_theme_dark-purple button_available" href="#">Заказать такой же</a></footer>
+                    </div>
+                  </div>
+                  <div class="reviews-catalog__item">
+                    <div class="reviews-catalog-card">
+                      <header class="reviews-catalog-card__header">
+                        <div class="reviews-catalog-card__row reviews-catalog-card__first-row">
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reviews-catalog-card__shop-label">магазин</div>
+                            <div class="reviews-catalog-card__shop-name">Волшебный букет</div>
+                          </div>
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reivews-catalog-card__vote"><img src="images/vote/dislike.png" width="20" height="22"></div>
+                          </div>
+                        </div>
+                        <div class="reviews-catalog-card__row reviews-catalog-card__second-row">
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reviews-catalog-card__author">Маша</div>
+                            <div class="reviews-catalog-card__date">14 мая 2017</div>
+                          </div>
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reviews-catalog-card__rating">
+                              <div class="rating">
+                                <div class="rating__current" style="width: 20%;"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </header>
+                      <div class="reviews-catalog-card__body">
+                        <div class="reviews-catalog-card__opinion">Букет которыйя заказывала был с белыми и ярко оранжевыми розами. А доставили с бардовыми((( Меня это очень расстроило т.к. хотелось сделать яркий букет в подарок! Если не было таких роз как на картинке навеное можно было сообщить об этом, чтобы у меня была возможность выбрать другой букет. Часто заказываю у Вас, но в этот раз очень разочарована! Не хочется таких сюрпризов.</div>
+                        <div class="reviews-catalog-card__row reviews-catalog-card__photo-row">
+                          <div class="reviews-catalog-card__row-side"><img class="reviews-catalog-card__photo" src="images/reviews-catalog-card/2-before.jpg">
+                            <div class="reviews-catalog-card__photo-label">На сайте</div>
+                          </div>
+                          <div class="reviews-catalog-card__row-side"><img class="reviews-catalog-card__photo" src="images/reviews-catalog-card/2-after.jpg" width="137" height="106">
+                            <div class="reviews-catalog-card__photo-label">Перед доставкой</div>
+                          </div>
+                        </div>
+                      </div>
+                      <footer class="reviews-catalog-card__foo"><a class="button button_size_sm button_theme_dark-purple button_available" href="#">Заказать такой же</a></footer>
+                    </div>
+                  </div>
+                  <div class="reviews-catalog__item">
+                    <div class="reviews-catalog-card">
+                      <header class="reviews-catalog-card__header">
+                        <div class="reviews-catalog-card__row reviews-catalog-card__first-row">
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reviews-catalog-card__shop-label">магазин</div>
+                            <div class="reviews-catalog-card__shop-name">Радужная корзина</div>
+                          </div>
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reivews-catalog-card__vote"><img src="images/vote/like.png" width="20" height="22"></div>
+                          </div>
+                        </div>
+                        <div class="reviews-catalog-card__row reviews-catalog-card__second-row">
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reviews-catalog-card__author">Антон</div>
+                            <div class="reviews-catalog-card__date">14 мая 2017</div>
+                          </div>
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reviews-catalog-card__rating">
+                              <div class="rating">
+                                <div class="rating__current" style="width: 100%;"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </header>
+                      <div class="reviews-catalog-card__body">
+                        <div class="reviews-catalog-card__row reviews-catalog-card__photo-row">
+                          <div class="reviews-catalog-card__row-side"><img class="reviews-catalog-card__photo" src="images/reviews-catalog-card/1-before.jpg">
+                            <div class="reviews-catalog-card__photo-label">На сайте</div>
+                          </div>
+                          <div class="reviews-catalog-card__row-side"><img class="reviews-catalog-card__photo" src="images/reviews-catalog-card/1-after.jpg" width="137" height="106">
+                            <div class="reviews-catalog-card__photo-label">Перед доставкой</div>
+                          </div>
+                        </div>
+                      </div>
+                      <footer class="reviews-catalog-card__foo"><a class="button button_size_sm button_theme_dark-purple button_available" href="#">Заказать такой же</a></footer>
+                    </div>
+                  </div>
+                  <div class="reviews-catalog__item">
+                    <div class="reviews-catalog-card">
+                      <header class="reviews-catalog-card__header">
+                        <div class="reviews-catalog-card__row reviews-catalog-card__first-row">
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reviews-catalog-card__shop-label">магазин</div>
+                            <div class="reviews-catalog-card__shop-name">Волшебный букет</div>
+                          </div>
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reivews-catalog-card__vote"><img src="images/vote/dislike.png" width="20" height="22"></div>
+                          </div>
+                        </div>
+                        <div class="reviews-catalog-card__row reviews-catalog-card__second-row">
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reviews-catalog-card__author">Маша</div>
+                            <div class="reviews-catalog-card__date">14 мая 2017</div>
+                          </div>
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reviews-catalog-card__rating">
+                              <div class="rating">
+                                <div class="rating__current" style="width: 20%;"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </header>
+                      <div class="reviews-catalog-card__body">
+                        <div class="reviews-catalog-card__opinion">Букет которыйя заказывала был с белыми и ярко оранжевыми розами. А доставили с бардовыми((( Меня это очень расстроило т.к. хотелось сделать яркий букет в подарок! Если не было таких роз как на картинке навеное можно было сообщить об этом, чтобы у меня была возможность выбрать другой букет. Часто заказываю у Вас, но в этот раз очень разочарована! Не хочется таких сюрпризов.</div>
+                        <div class="reviews-catalog-card__row reviews-catalog-card__photo-row">
+                          <div class="reviews-catalog-card__row-side"><img class="reviews-catalog-card__photo" src="images/reviews-catalog-card/2-before.jpg">
+                            <div class="reviews-catalog-card__photo-label">На сайте</div>
+                          </div>
+                          <div class="reviews-catalog-card__row-side"><img class="reviews-catalog-card__photo" src="images/reviews-catalog-card/2-after.jpg" width="137" height="106">
+                            <div class="reviews-catalog-card__photo-label">Перед доставкой</div>
+                          </div>
+                        </div>
+                      </div>
+                      <footer class="reviews-catalog-card__foo"><a class="button button_size_sm button_theme_dark-purple button_available" href="#">Заказать такой же</a></footer>
+                    </div>
+                  </div>
+                  <div class="reviews-catalog__item">
+                    <div class="reviews-catalog-card">
+                      <header class="reviews-catalog-card__header">
+                        <div class="reviews-catalog-card__row reviews-catalog-card__first-row">
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reviews-catalog-card__shop-label">магазин</div>
+                            <div class="reviews-catalog-card__shop-name">Цветы для любимой</div>
+                          </div>
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reivews-catalog-card__vote"><img src="images/vote/like.png" width="20" height="22"></div>
+                          </div>
+                        </div>
+                        <div class="reviews-catalog-card__row reviews-catalog-card__second-row">
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reviews-catalog-card__author">Анна</div>
+                            <div class="reviews-catalog-card__date">14 мая 2017</div>
+                          </div>
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reviews-catalog-card__rating">
+                              <div class="reviews-catalog-card__rating-icon"><img src="images/flower-with-leaves.png" width="16" height="19"></div>
+                              <div class="rating">
+                                <div class="rating__current" style="width: 80%;"></div>
+                              </div>
+                            </div>
+                            <div class="reviews-catalog-card__rating">
+                              <div class="reviews-catalog-card__rating-icon"><img src="images/delivery.png" width="19" height="20"></div>
+                              <div class="rating">
+                                <div class="rating__current" style="width: 100%;"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </header>
+                      <div class="reviews-catalog-card__body">
+                        <div class="reviews-catalog-card__opinion">Доставили в срок, очень понравилась карточка, свежие цветы, очень понравился улыбчивый курьер, буду всегда у вас заказывать теперь.</div>
+                        <div class="reviews-catalog-card__row reviews-catalog-card__photo-row">
+                          <div class="reviews-catalog-card__row-side"><img class="reviews-catalog-card__photo" src="images/reviews-catalog-card/1-before.jpg">
+                            <div class="reviews-catalog-card__photo-label">На сайте</div>
+                          </div>
+                          <div class="reviews-catalog-card__row-side"><img class="reviews-catalog-card__photo" src="images/reviews-catalog-card/1-after.jpg" width="137" height="106">
+                            <div class="reviews-catalog-card__photo-label">Перед доставкой</div>
+                          </div>
+                        </div>
+                      </div>
+                      <footer class="reviews-catalog-card__foo"><a class="button button_size_sm button_theme_dark-purple button_available" href="#">Заказать такой же</a></footer>
+                    </div>
+                  </div>
+                  <div class="reviews-catalog__item">
+                    <div class="reviews-catalog-card">
+                      <header class="reviews-catalog-card__header">
+                        <div class="reviews-catalog-card__row reviews-catalog-card__first-row">
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reviews-catalog-card__shop-label">магазин</div>
+                            <div class="reviews-catalog-card__shop-name">Цветы для любимой</div>
+                          </div>
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reivews-catalog-card__vote"><img src="images/vote/like.png" width="20" height="22"></div>
+                          </div>
+                        </div>
+                        <div class="reviews-catalog-card__row reviews-catalog-card__second-row">
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reviews-catalog-card__author">Анна</div>
+                            <div class="reviews-catalog-card__date">14 мая 2017</div>
+                          </div>
+                          <div class="reviews-catalog-card__row-side">
+                            <div class="reviews-catalog-card__rating">
+                              <div class="rating">
+                                <div class="rating__current" style="width: 100%;"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </header>
+                      <div class="reviews-catalog-card__body">
+                        <div class="reviews-catalog-card__opinion">Доставили в срок, очень понравилась карточка, свежие цветы, очень понравился улыбчивый курьер, буду всегда у вас заказывать теперь.</div>
+                        <div class="reviews-catalog-card__row reviews-catalog-card__photo-row">
+                          <div class="reviews-catalog-card__row-side"><img class="reviews-catalog-card__photo" src="images/reviews-catalog-card/1-before.jpg">
+                            <div class="reviews-catalog-card__photo-label">На сайте</div>
+                          </div>
+                          <div class="reviews-catalog-card__row-side"><img class="reviews-catalog-card__photo" src="images/reviews-catalog-card/1-after.jpg" width="137" height="106">
+                            <div class="reviews-catalog-card__photo-label">Перед доставкой</div>
+                          </div>
+                        </div>
+                      </div>
+                      <footer class="reviews-catalog-card__foo"><a class="button button_size_sm button_theme_dark-purple button_available" href="#">Заказать такой же</a></footer>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="section__container"><a class="button button_size_md button_theme_gray button_available reviews-catalog__more" href="#">Смотреть ещё отзывы</a></div>
         </div>
       </div>
     </div>
@@ -420,10 +803,99 @@
     <div class="section copy">
       <div class="section__container">Copyright © 2017 LEKEN, Inc. — The local florist marketplace</div>
     </div>
+    <div class="hidden">
+      <div class="add-reviews" id="addreviews">
+        <div class="add-reviews__shop">
+          <div class="add-reviews__shop-label">магазин</div>
+          <div class="add-reviews__shop-name">Цветы для любимой</div>
+        </div>
+        <div class="add-reviews__product"><span class="add-reviews__product-label">Букет </span><span class="add-reviews__product-name">Роза Бордовая </span></div>
+        <div class="add-reviews__rating-row add-reviews__rating-row">
+          <div class="add-reviews__rating-label">Общая оценка</div>
+          <div class="add-reviews__rating-side">
+            <div class="rating-field">
+              <label class="rating-field__star">
+                <input class="rating-field__input no-custom" type="radio" name="rating-1">
+              </label>
+              <label class="rating-field__star">
+                <input class="rating-field__input no-custom" type="radio" name="rating-1">
+              </label>
+              <label class="rating-field__star">
+                <input class="rating-field__input no-custom" type="radio" name="rating-1">
+              </label>
+              <label class="rating-field__star">
+                <input class="rating-field__input no-custom" type="radio" name="rating-1">
+              </label>
+              <label class="rating-field__star">
+                <input class="rating-field__input no-custom" type="radio" name="rating-1">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="add-reviews__rating-row add-reviews__rating-row">
+          <div class="add-reviews__rating-label">Свежесть цветов</div>
+          <div class="add-reviews__rating-side">
+            <div class="rating-field">
+              <label class="rating-field__star">
+                <input class="rating-field__input no-custom" type="radio" name="rating-2">
+              </label>
+              <label class="rating-field__star">
+                <input class="rating-field__input no-custom" type="radio" name="rating-2">
+              </label>
+              <label class="rating-field__star">
+                <input class="rating-field__input no-custom" type="radio" name="rating-2">
+              </label>
+              <label class="rating-field__star">
+                <input class="rating-field__input no-custom" type="radio" name="rating-2">
+              </label>
+              <label class="rating-field__star">
+                <input class="rating-field__input no-custom" type="radio" name="rating-2">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="add-reviews__rating-row add-reviews__rating-row">
+          <div class="add-reviews__rating-label">Работа курьера</div>
+          <div class="add-reviews__rating-side">
+            <div class="rating-field">
+              <label class="rating-field__star">
+                <input class="rating-field__input no-custom" type="radio" name="rating-3">
+              </label>
+              <label class="rating-field__star">
+                <input class="rating-field__input no-custom" type="radio" name="rating-3">
+              </label>
+              <label class="rating-field__star">
+                <input class="rating-field__input no-custom" type="radio" name="rating-3">
+              </label>
+              <label class="rating-field__star">
+                <input class="rating-field__input no-custom" type="radio" name="rating-3">
+              </label>
+              <label class="rating-field__star">
+                <input class="rating-field__input no-custom" type="radio" name="rating-3">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="add-reviews__photo-title">Фото букета</div>
+        <div class="add-reviews__photo-row">
+          <div class="add-reviews__photo-side"><img class="add-reviews__photo" src="images/addreviews/before.png" width="175" height="136">
+            <div class="add-reviews__photo-label">На сайте</div>
+          </div>
+          <div class="add-reviews__photo-side"><img class="add-reviews__photo" src="images/addreviews/after.png" width="175" height="136">
+            <div class="add-reviews__photo-label">Перед доставкой</div>
+          </div>
+        </div>
+        <textarea class="add-reviews__opinion" placeholder="Ваш комментарий"></textarea>
+        <button class="button button_available button_size_sm button_theme_dark-purple">Отправить отзыв</button>
+      </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script src="js/jquery.formstyler.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.0/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
