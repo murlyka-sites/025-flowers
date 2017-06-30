@@ -2331,11 +2331,14 @@ a {
 }
 
 .add-reviews {
+	box-sizing border-box
 	width 520px
 	max-width 100%
 	padding 25px 15px !important
+	margin auto
 	font-size 14px 
 	color #232323
+	box-shadow: 0 0 29px rgba(0, 0, 0, 0.13);
 	
 	@media (min-width $sm) {
 		padding 57px 60px !important
@@ -2498,4 +2501,12 @@ a {
 
 .hidden {
 	display none
+}
+
+.add-reviews-section {
+	&__title {
+		margin 100px 0 90px
+		color: #232323;
+		font-size: 20px;
+	}
 }

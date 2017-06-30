@@ -1,0 +1,32 @@
+@import url("http://allfont.ru/allfont.css?fonts=pt-sans");
+@import url("http://allfont.ru/allfont.css?fonts=pt-sans-caption-bold");
+@font-face {
+  font-family: 'PT Sans';
+  src: url("../fonts/PTSans/700/pt-sans-bold.woff2") format('woff2'), url("../fonts/PTSans/700/pt-sans-bold.woff") format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PT Sans';
+  src: url("../fonts/PTSans/400/pt-sans-regular.woff2") format('woff2'), url("../fonts/PTSans/400/pt-sans-regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bliss Pro';
+  src: url("../fonts/BlissPro/BlissPro-Light.woff") format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bliss Pro';
+  src: url("../fonts/BlissPro/BlissPro-Regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bliss Pro';
+  src: url("../fonts/BlissPro/BlissPro-Bold.woff") format('woff');
+  font-weight: bold;
+  font-style: normal;
+}

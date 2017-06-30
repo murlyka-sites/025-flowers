@@ -1,12 +1,74 @@
 doctype html
 html
 	head
-		title Цветы - Главная
+		title Цветы - Отзывы
 		include blocks/head.pug
-
+		
 	body.page
+		header.header
+			
+		include blocks/header.pug
 
+		.page-reviews.section: .section__container: .page-reviews__container
+			svg.svg-sprite.page-reviews__icon(width="75" height="77"): use(xlink:href="images/sprite.svg#reviews")
+			h1.typo__h1.page-reviews__title Отзывы о магазинах
+			.page-reviews__slogan Здесь собраны все отзывы о цветочных магазинах
+			.add-reviews-section__title Оставить отзыв
+			.add-reviews
+				.add-reviews__shop
+					.add-reviews__shop-label магазин
+					.add-reviews__shop-name Цветы для любимой
+
+				.add-reviews__product
+					span.add-reviews__product-label Букет 
+					span.add-reviews__product-name Роза Бордовая 
+
+				.add-reviews__rating-row.add-reviews__rating-row
+					.add-reviews__rating-label Общая оценка
+					.add-reviews__rating-side
+						.rating-field
+							label.rating-field__star: input.rating-field__input.no-custom(type="radio" name="rating-1")
+							label.rating-field__star: input.rating-field__input.no-custom(type="radio" name="rating-1")
+							label.rating-field__star: input.rating-field__input.no-custom(type="radio" name="rating-1")
+							label.rating-field__star: input.rating-field__input.no-custom(type="radio" name="rating-1")
+							label.rating-field__star: input.rating-field__input.no-custom(type="radio" name="rating-1")
+
+				.add-reviews__rating-row.add-reviews__rating-row
+					.add-reviews__rating-label Свежесть цветов
+					.add-reviews__rating-side
+						.rating-field
+							label.rating-field__star: input.rating-field__input.no-custom(type="radio" name="rating-2")
+							label.rating-field__star: input.rating-field__input.no-custom(type="radio" name="rating-2")
+							label.rating-field__star: input.rating-field__input.no-custom(type="radio" name="rating-2")
+							label.rating-field__star: input.rating-field__input.no-custom(type="radio" name="rating-2")
+							label.rating-field__star: input.rating-field__input.no-custom(type="radio" name="rating-2")
+
+				.add-reviews__rating-row.add-reviews__rating-row
+					.add-reviews__rating-label Работа курьера
+					.add-reviews__rating-side
+						.rating-field
+							label.rating-field__star: input.rating-field__input.no-custom(type="radio" name="rating-3")
+							label.rating-field__star: input.rating-field__input.no-custom(type="radio" name="rating-3")
+							label.rating-field__star: input.rating-field__input.no-custom(type="radio" name="rating-3")
+							label.rating-field__star: input.rating-field__input.no-custom(type="radio" name="rating-3")
+							label.rating-field__star: input.rating-field__input.no-custom(type="radio" name="rating-3")
+
+
+				.add-reviews__photo-title Фото букета
+
+				.add-reviews__photo-row
+					.add-reviews__photo-side
+						img.add-reviews__photo(src="images/addreviews/before.png" width="175" height="136")
+						.add-reviews__photo-label На сайте
+					.add-reviews__photo-side
+						img.add-reviews__photo(src="images/addreviews/after.png" width="175" height="136")
+						.add-reviews__photo-label Перед доставкой
+
+
+				textarea.add-reviews__opinion(placeholder="Ваш комментарий")
+				button.button.button_available.button_size_sm.button_theme_dark-purple Отправить отзыв		
+		
+
+		include blocks/foo.pug
 		include blocks/hidden.pug
 		include blocks/scripts.pug
-		script.
-			$.fancybox.open([{src: "#addreviews"}])
