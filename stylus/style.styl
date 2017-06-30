@@ -227,7 +227,7 @@ a {
 			display flex
 			flex-wrap wrap
 			align-items stretch
-			justify-content center
+			justify-content flex-start
 		}
 		
 	}
@@ -259,19 +259,19 @@ a {
 			}
 		}
 		
-		&:nth-child(1),
-		&:nth-child(4),
-		&:nth-child(5),
-		&:nth-child(8) {
+		&:nth-child(8n+1),
+		&:nth-child(8n+4),
+		&:nth-child(8n+5),
+		&:nth-child(8n+8) {
 			@media (min-width: $sm) and (max-width ($md - 1px)) {
 				background-color #e2e2e2
 			}
 		}
 		
-		&:nth-child(1),
-		&:nth-child(3),
-		&:nth-child(6),
-		&:nth-child(8) {
+		&:nth-child(8n+1),
+		&:nth-child(8n+3),
+		&:nth-child(8n+6),
+		&:nth-child(8n+8) {
 			@media (min-width $md) {
 				background-color #e2e2e2
 			}
@@ -2511,4 +2511,8 @@ a {
 		color: #232323;
 		font-size: 20px;
 	}
+}
+
+.store-reviews {
+	margin 80px 0
 }

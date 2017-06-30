@@ -180,11 +180,11 @@ $(document).ready(function() {
 				$grid.imagesLoaded().progress( function() {
 					$grid.masonry('layout');
 				});
-	  }
-	});
+			}
+		});
 
-	  return false;
-  });
+		return false;
+	});
 
 
 
@@ -210,6 +210,33 @@ $(document).ready(function() {
 	 	$tabContent.find(".tab-content__item_active").removeClass("tab-content__item_active");
 	 	$($tabContent.find(".tab-content__item")[index]).addClass("tab-content__item_active");
 
+
+  	return false;
+  });
+
+  $(".reviews-shop .card-shop__reviews").click(function (){
+  	var $card = $(this).closest(".card-shop"),
+  			cardTitle = $card.find(".card-shop__title").text(),
+
+  			$reviewsBlock = $(".store-reviews"),
+  			$reviewsTitle = $(".store-reviews__title"),
+  			$reviewsGrid = $(".store-reviews__grid");
+
+		
+		$reviewsTitle.text(cardTitle);
+
+		$.ajax({
+			url: "getReviewsStore.html",
+			success: function(data){
+				$items = $(data);
+
+				$reviewsGrid.empty().append($items);
+
+				$reviewsBlock.removeClass("hidden");
+
+				$("html, body").animate({ scrollTop: $reviewsBlock.offset().top}, 110);
+			}
+		});
 
   	return false;
   });

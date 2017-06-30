@@ -20,8 +20,10 @@ html
 		.tab-content#reviews-tab-content
 			.tab-content__item.tab-content__item_active(data-callback="tabCallbackSlick")
 				include blocks/reviews/shop.pug
+
+				include blocks/reviews/shop-reviews.pug
 			.tab-content__item(data-callback="tabCallbackMasonry")
-				include blocks/reviews-catalog.pug
+				include blocks/reviews/all-catalog.pug
 							
 		
 
