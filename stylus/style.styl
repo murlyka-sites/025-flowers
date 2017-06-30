@@ -2471,10 +2471,12 @@ a {
 
 .tab-content {
 	&__item {
-		display none
+		height 0
+		overflow hidden
 		
 		&_active {
-			display block
+			height auto
+			overflow visible 
 		}
 	}
 }

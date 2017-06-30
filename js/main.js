@@ -210,7 +210,6 @@ $(document).ready(function() {
 	 	$tabContent.find(".tab-content__item_active").removeClass("tab-content__item_active");
 	 	$($tabContent.find(".tab-content__item")[index]).addClass("tab-content__item_active");
 
-	 	$grid.masonry('layout');
 
   	return false;
   });

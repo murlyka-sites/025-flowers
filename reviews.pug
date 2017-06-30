@@ -18,9 +18,9 @@ html
 			li.nav-tabs__item: a.nav-tabs__link(href="#") Отзывы
 		
 		.tab-content#reviews-tab-content
-			.tab-content__item.tab-content__item_active
+			.tab-content__item.tab-content__item_active(data-callback="tabCallbackSlick")
 				include blocks/reviews/shop.pug
-			.tab-content__item
+			.tab-content__item(data-callback="tabCallbackMasonry")
 				include blocks/reviews-catalog.pug
 							
 		
