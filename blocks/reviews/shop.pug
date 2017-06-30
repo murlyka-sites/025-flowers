@@ -1,0 +1,15 @@
+.reviews-shop.section: .section__container: .reviews-shop__container
+	each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		.reviews-shop__card: .card-shop
+			.card-shop__header
+				.card-shop__rating
+					.rating.rating_small: .rating__current.rating__current_small(style="width: 70%")
+				.card-shop__val 3,8
+			a.card-shop__title(href="#") Корзинка цветов 
+			.card-shop__body
+				a(href="#"): img.card-shop__pr(src="images/card-shop.jpg" width="132" height="82")
+				.card-shop__info
+					.card-shop__address ул. Цветочная, д. 4 тел. 75-24-74
+					.card-shop__reviews 
+						svg.svg-sprite.card-shop__reviews-icon(width="20" height="20"): use(xlink:href="images/sprite.svg#reviews")
+						a.card-shop__reviews-text(href="#") 543 отзывов
